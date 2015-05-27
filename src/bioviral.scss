@@ -1,0 +1,305 @@
+@import "vars.scss";
+@import "wrap.scss";
+@import "scroller.scss";
+@import "navigation.scss";
+@import "content.scss";
+@import "footer.scss";
+
+
+@import "about.scss";
+
+* {	margin: 0; }
+
+html, body { height: 100%; }
+
+html {
+	font-size: 100%; // for scalability issues with em units in IE56 //
+	width: 100%;	
+}
+
+body {
+	background-image: url('../img/fabric_black.png');
+	// font-size: 100.01%;  Compensates for several browser bugs //
+	font-size: 62.5%; // 1em = 10px //
+	background-color: white;
+	background-attachment: fixed;
+	font-family: Arial,Helvetica,;
+	color: $white;
+	
+	a {
+		color: inherit;
+	}
+	
+	p.copyright
+	{
+		color: white !important;
+		font-size: 1.2em;
+		text-align: center;
+		clear: both;
+	}		
+}
+
+body 
+{
+	div.plusOne
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	#head{
+		padding: 0 0 30px 0;
+		height: 40%;
+		background: url("http://www.monochro.me/img/main.jpg") center 0px;
+		line-height: 520px;
+		margin: 80px 0 0 0;
+		text-align: center;
+		color: white;
+		font-size: 9em;
+		font-style: italic;
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	
+	div.content.index {
+		margin: 0 0 0 210px;
+		max-height: 550px;
+		min-height: 0;
+		width: 800px;
+		position: absolute;
+		padding: 0 0 20px 60px;
+		overflow: hidden;
+		.frame 
+		{
+			border: none;
+			width: 790px;
+			height: 455px;
+			float: left;
+			margin: 105px 0 0 -55px;
+			img
+			{
+				float: left;
+				box-shadow: 8px 8px 19px black;
+			}
+			img:first-child
+			{
+				float: right;
+				border: none!important;
+
+			}
+		} 
+		.js .frame 
+		{ 
+			display: none;
+		}
+		a.display
+		{
+			display: block;
+		}
+		a.hidden
+		{
+			display: none;
+		}
+	}
+	>div.contact
+	{
+
+		form#contact{
+			li{
+				float: none;
+				min-height: 0px;
+			}
+		}
+
+		span[itemprop=name]{
+			font-weight:800;
+		}
+		img
+		{
+			position: relative;
+			top: -47px;
+			left: 440px;
+			padding: 0 20px 0 0;
+			margin: -206px 0 0;
+		}
+		div
+		{
+			float: left;
+			position: relative;
+			text-align: left;
+			color: $white;
+			padding: 5px;
+			margin: 0 0 5px 0;
+			font-size: 1.4em;
+
+			
+			ul
+			{
+				li
+				{
+					font-size: 1em;
+					margin: 0 0 6px 6px;
+					font-family: Rockwell,"Rockwell","Courier New",Courier,Times,Georgia,serif;
+					
+					em
+					{
+						color: white;
+					}
+				}
+			}
+			
+			h1 
+			{
+				font-size: 1.5em;
+				margin: 0 0 7px;
+				font-weight: 100;
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				color: $white; 
+				display: table;
+			}
+			>h2 
+			{
+				font-family: arial;
+				font-size: 1.2em;
+				letter-spacing: 0.02em;
+				font-weight: 800;
+				color: white;
+				border-bottom: 1px dotted $darkGrey;
+				display: table;
+				a 
+				{
+					display: inline;
+					font-size: inherit;
+					color: $green;
+					&:hover 
+					{
+						color: $white;
+						background-color: $green;
+					}
+				}
+			}
+			h3 
+			{
+				font-size: 10px;
+				color: $white;
+				width: 300px;
+				text-align: left;
+				float: right;
+			}
+			a 
+			{
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				font-size: 1.1em;
+				font-style: italic;
+				border: 1px dashed $grey;
+				color: white;
+				background-color: $green;
+				padding: 5px;
+				line-height: 40px;
+				
+				
+				&:hover 
+				{
+					background-color: transparent;
+					border: 1px dashed $white;
+					
+				}
+			}
+			p
+			{
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				margin: 0 0 10px 0;
+				font-size: 1.6em;
+				background-image: url('../img/paper.jpg');
+				padding: 20px;
+				color: rgba(0,0,0,0.8);
+				font-style: italic;
+			}
+			strong
+			{
+				font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+				font-weight: 100;
+			}
+			em
+			{
+				font-weight: 100;
+			}
+			ol
+			{
+				margin: 0 0 5px 0;
+				width: 400px;
+				display: inline;
+				li 
+				{
+					margin: 0 0 5px 0;
+					input.submit 
+					{
+						cursor: pointer;
+						background-color: $green;
+						color: $white;
+						border: 1px dashed $darkerGrey;
+						font-style: italic;
+						font-size: 1.5em;
+						width: 100%;
+						height: 35px;
+						-webkit-appearance: none;
+						padding: 5px;
+						
+						&:hover, &:active
+						{
+							border: 1px dashed white;
+							color: white;
+							background-color: transparent;
+						}
+					}
+					input
+					{
+						height: 30px;
+					}
+					textarea
+					{
+						
+					}
+					input, textarea 
+					{
+						border: none;
+						font-family: Georgia, serif;
+						padding: 5px;
+						width: 100%;
+						background-image: url("../img/input_background.png");
+						background-repeat: repeat-x;
+						box-sizing: border-box;
+
+					}
+					
+				}
+			}
+		}
+		div.block5
+		{
+			clear: both;
+			float: none;
+		}
+		div.exhibitions
+		{
+			ul
+			{
+			}
+		}
+	}
+	div.bottom, div.footer
+	{
+		height: 150px;
+		clear: both;
+	}
+	div.bottom 
+	{
+	}
+	
+}
+ 

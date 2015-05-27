@@ -1,0 +1,873 @@
+body.gallery div.head {
+  background: url("../img/headBackground.png");
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 25px 0 0 100px;
+}
+body.gallery div.head > a {
+  margin: 0 18px 0 0;
+  float: left;
+  height: 18px;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+body.gallery div.head a.photography {
+  width: 182px;
+  background-position: 0px -100px;
+}
+body.gallery div.head a.photography:hover {
+  background-position: 0px -20px;
+}
+body.gallery div.head a.design {
+  width: 87px;
+  background-position: 0px -120px;
+}
+body.gallery div.head a.design:hover {
+  background-position: 0px -40px;
+}
+body.gallery div.head a.illustration {
+  width: 156px;
+  background-position: 0px -140px;
+}
+body.gallery div.head a.illustration:hover {
+  background-position: 0px -60px;
+}
+body.gallery div.head a.monochrome {
+  width: 185px;
+  background-position: 0px -80px;
+}
+body.gallery div.head a.monochrome:hover {
+  background-position: 0px 0px;
+}
+body.gallery div.head a.photography.active {
+  background-position: 0px -20px;
+}
+body.gallery div.head a.design.active {
+  background-position: 0px -40px;
+}
+body.gallery div.head a.illustration.active {
+  background-position: 0px -60px;
+}
+body.gallery ul.nav {
+  color: #5a5a5a;
+  clear: both;
+}
+body.gallery ul.nav li {
+  margin: 3px 10px 0 0;
+  float: left;
+  font-size: 0.65em;
+}
+body.gallery ul.nav li a {
+  text-transform: uppercase;
+  font-style: italic;
+  color: gray;
+}
+body.gallery ul.nav li a:hover {
+  color: white;
+  text-shadow: #FFFFFF 0 0 8px;
+}
+body.gallery div.gallery {
+  height: 100%;
+}
+body.gallery div.gallery table.gallery {
+  margin: 75px 0 0 15px;
+}
+body.gallery div.gallery table.gallery .hoverRed, body.gallery div.gallery table.gallery .hoverYellow, body.gallery div.gallery table.gallery .hoverCyan {
+  background-color: black;
+}
+body.gallery div.gallery table.gallery .hoveredRed {
+  background-color: #5a5a5a;
+}
+body.gallery div.gallery table.gallery .hoveredYellow {
+  background-color: #f49814;
+}
+body.gallery div.gallery table.gallery .hoveredCyan {
+  background-color: #00bbcc;
+}
+body.gallery div.gallery table.gallery th, body.gallery div.gallery table.gallery td {
+  padding: 0 80px;
+}
+body.gallery div.gallery table.gallery th {
+  height: 500px;
+  min-width: 300px;
+  text-align: left;
+}
+body.gallery div.gallery table.gallery th img {
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #262626;
+}
+body.gallery div.gallery table.gallery th h1, body.gallery div.gallery table.gallery th p {
+  width: 300px;
+}
+body.gallery div.gallery table.gallery th p {
+  color: lightGrey;
+  font-size: 0.75em;
+}
+body.gallery div.gallery table.gallery th h1 {
+  color: #d9d9d9;
+  font-size: 1.5em;
+}
+body.gallery div.gallery table.gallery th h2 {
+  color: #a7a7a7;
+  font-size: 1em;
+}
+body.gallery div.gallery table.gallery th h3 {
+  color: black;
+  font-size: 1.2em;
+}
+body.gallery div.gallery table.gallery td {
+  color: #c5c5c5;
+  font-size: 0.65em;
+}
+body.gallery div.footer {
+  color: #5a5a5a;
+  font-size: 0.65em;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  width: 300px;
+  height: 15px;
+}
+body.gallery div.footer a {
+  color: white;
+}
+body.gallery div.footer a:hover {
+  text-shadow: #FFFFFF 0 0 8px;
+}
+
+#wrapGallery {
+  margin: 0 0 0 220px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+#playScroller {
+  margin: 0 0 0 220px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#playScroller .derecha {
+  margin: 0 0 0 50%;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+#playScroller .derecha .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .derecha .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .derecha .topOn {
+  background-image: url("../img/derechaTop.png");
+}
+#playScroller .derecha .bottomOn {
+  background-image: url("../img/derechaBottom.png");
+}
+#playScroller .izquierda {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+}
+#playScroller .izquierda .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .izquierda .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .izquierda .topOn {
+  background-image: url("../img/izquierdaTop.png");
+}
+#playScroller .izquierda .bottomOn {
+  background-image: url("../img/izquierdaBottom.png");
+}
+#playScroller .centro {
+  position: absolute;
+  margin: 0 0 0 35%;
+  width: 15%;
+  height: 100%;
+}
+#playScroller .derechaOn {
+  background-image: url("../img/derechaOn.png");
+}
+#playScroller .izquierdaOn {
+  background-image: url("../img/izquierdaOn.png");
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: white;
+  background-attachment: fixed;
+  font-family: Arial,Helvetica,;
+  color: #d2d2d2;
+}
+body a {
+  color: inherit;
+}
+body p.copyright {
+  color: white !important;
+  font-size: 1.2em;
+  text-align: center;
+  clear: both;
+}
+body div.background_black {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../img/fabric_black.png");
+  position: fixed;
+  z-index: -5;
+}
+body div.background_white {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../img/white_fabric.png");
+  position: fixed;
+  z-index: -5;
+  display: none;
+}
+body div.header {
+  bottom-margin: 1px solid white;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+body div.header h1, body div.header h2 {
+  margin: 5px;
+  font-weight: 100;
+}
+body div.header h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-indent: -35px;
+  white-space: nowrap;
+  width: 80px;
+  height: 80px;
+  padding: 0 0 0 60px;
+}
+body div.header h2 {
+  margin: -4px 5px 0 0;
+  clear: left;
+  font-size: 1em;
+  letter-spacing: 0.30em;
+  text-transform: lowercase;
+}
+body div.header h2 a {
+  font-weight: 100;
+  font-style: italic;
+  color: #5a5a5a;
+}
+body div.header h2 a:hover {
+  color: white;
+}
+body div.navigation {
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10px 0 20px;
+  border-right: 1px dashed #343434;
+  background-image: url("../img/fabric_black.png");
+  z-index: 2;
+  height: 100%;
+  box-shadow: 20px 0px 35px -14px black;
+}
+body div.navigation > a[href$='works'] {
+  color: #cccccc;
+}
+body div.navigation > a[href$='who'] {
+  color: #0ba46c;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+body div.navigation > a:first-child {
+  font-size: 1.1em;
+  color: #d2d2d2;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 80px;
+  line-height: 175px;
+  margin: 0 0 20px 0;
+}
+body div.navigation > a:first-child:hover, body div.navigation > a:first-child:active {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+body div.navigation > a:first-child:first-letter {
+  font-style: italic;
+}
+body div.navigation > a {
+  text-transform: uppercase;
+  font-size: 3.1em;
+  color: #d2d2d2;
+  font-style: italic;
+  display: block;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  margin: 5px 0 0 0;
+}
+body div.navigation > a:hover {
+  color: white;
+}
+body div.navigation h1 {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1.4em;
+  font-weight: 100;
+  padding: 5px 0 0 0;
+  color: white;
+}
+body div.navigation h1 a {
+  color: #d2d2d2;
+  padding: 2px;
+  margin: 0 -2px;
+}
+body div.navigation h1 a:hover {
+  color: white;
+}
+body div.navigation ul li {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 1px 0;
+}
+body div.navigation ul li a {
+  color: #d2d2d2;
+  display: block;
+  padding: 2px 0;
+}
+body div.navigation ul li a:hover {
+  color: white;
+}
+body div.navigation ul .active {
+  background-color: #d2d2d2;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: black !important;
+  box-shadow: inset -79px 1px 45px -15px white;
+}
+body div.navigation ul p {
+  color: #343434;
+}
+body div.navigation ul, body div.navigation a {
+  margin: 0 0px 0 -20px;
+}
+
+a.toTop {
+  z-index: 99;
+  font-family: Arial;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  font-size: 1.1em;
+  line-height: 1em;
+  text-align: center;
+  color: #d2d2d2;
+  display: none;
+  padding: 5px 20px;
+}
+a.toTop:hover {
+  background-color: #0e0e0e;
+  color: #d2d2d2;
+}
+a.toTop:active {
+  background-color: #d2d2d2;
+  color: #d2d2d2;
+}
+a.toTop em.row2 {
+  line-height: -2em;
+  display: block;
+  margin: -43px 0 0 0;
+}
+
+body.start {
+  text-align: center;
+  color: white;
+}
+body.start h1 {
+  background-image: url("../img/header.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-style: italic;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0px auto 20px auto;
+  text-indent: -3000px;
+  white-space: nowrap;
+  color: white;
+  width: 295px;
+  height: 65px;
+  padding: 20px 0 0 0;
+}
+body.start h1 a {
+  outline: none;
+  display: block;
+  height: 63px;
+}
+body.start h2 {
+  color: white;
+}
+body.start > a {
+  margin: 0 10px;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+body.start > a.index1 {
+  background-image: url("../img/index.jpg");
+}
+body.start > a.index1:hover {
+  background-position: 0px 250px;
+}
+body.start > a.index2 {
+  background-image: url("../img/index.jpg");
+  background-position: 500px 0px;
+}
+body.start > a.index2:hover {
+  background-position: 500px 250px;
+}
+body.start > a.index3 {
+  background-image: url("../img/index.jpg");
+  background-position: 250px 0px;
+}
+body.start > a.index3:hover {
+  background-position: 250px 250px;
+}
+body.start v
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #00bbcc;
+  margin: -7px 0 15px 0;
+  letter-spacing: .052em;
+}
+body.start ul.links {
+  margin: 5px 0 0 0;
+  font-family: inherit;
+}
+body.start ul.links li {
+  display: inline;
+  margin: 0 3px;
+}
+body.start ul.links li a {
+  padding: 0 5px;
+  color: inherit;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  color: #d2d2d2;
+}
+body.start ul.links li a:hover {
+  color: white;
+  background-color: #0ba46c;
+}
+body.start ul.links li a.works {
+  color: #0ba46c;
+}
+body.start ul.links li a.works:hover {
+  background-color: #0ba46c;
+  color: white;
+}
+
+body div.plusOne {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body div.content.works {
+  margin: 20px auto -165px;
+  padding: 0 0 0 150px;
+  max-width: 840px;
+}
+body div.content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0px 0px -165px 160px;
+  position: relative;
+  text-align: center;
+}
+body div.content iframe {
+  margin: 40px 0 0 0;
+}
+body div.content span.info {
+  display: block;
+  text-align: left;
+  padding: 40px 0 0;
+  text-align: center;
+  margin: 0 0 -30px 0;
+}
+body div.content span.info em, body div.content span.info h1, body div.content span.info h2, body div.content span.info p {
+  color: #d2d2d2;
+}
+body div.content span.info a {
+  font-weight: 800;
+  color: #0ba46c;
+}
+body div.content span.info a:hover {
+  color: white;
+}
+body div.content span.info em {
+  font-size: 1.1em;
+}
+body div.content span.info h1 {
+  font-family: Rockwell,"Rockwell","Courier New", Courier, Times, Georgia, serif;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+body div.content span.info h2 {
+  font-size: 1.2em;
+}
+body div.content > a {
+  margin: 40px auto;
+  display: table;
+}
+body div.content > a img {
+  box-shadow: 8px 8px 19px black;
+}
+body div.content > a > h1 {
+  color: white;
+  margin: 0 0 5px -20px;
+  font-size: 1em;
+  clear: both;
+  font-weight: 200;
+}
+body div.content span.box {
+  float: left;
+  min-height: 80px;
+  width: 250px;
+  padding: 20px 15px 0 15px;
+  margin: 0 auto;
+}
+body div.content span.box span {
+  display: block;
+  width: 250px;
+}
+body div.content span.box a {
+  display: block;
+  box-shadow: 8px 8px 19px black;
+  width: 250px;
+  height: 250px;
+  background: black;
+  overflow: hidden;
+}
+body div.content span.box a[href$=untitled_film] {
+  background-image: url("../works/img/untitled_film.jpg");
+}
+body div.content span.box a[href$=untitled_film]:hover, body div.content span.box a[href$=untitled_film]:active {
+  background-position: 0 -250px;
+}
+body div.content span.box img {
+  text-align: center;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+body div.content span.box h1, body div.content span.box h2 {
+  text-align: left;
+  color: #d2d2d2;
+}
+body div.content span.box h1 {
+  display: inline;
+  font-size: 1.2em !important;
+  float: left;
+  font-weight: 100;
+  margin: 4px 0 0 1px;
+  padding: 0 0 0 3px;
+  border-left: 3px solid #d2d2d2;
+}
+body div.content span.box h2 {
+  font-size: 1em !important;
+  letter-spacing: 0.2em;
+  clear: both;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+body div.content span.box span.state {
+  margin: 0 2px 0 3px;
+  width: 10px;
+  height: 10px;
+  display: inline;
+  float: right;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+body div.content.index {
+  margin: 0 0 0 210px;
+  max-height: 550px;
+  min-height: 0;
+  width: 800px;
+  position: absolute;
+  padding: 0 0 20px 60px;
+  overflow: hidden;
+}
+body div.content.index .frame {
+  border: none;
+  width: 790px;
+  height: 455px;
+  float: left;
+  margin: 95px 0 0 -55px;
+}
+body div.content.index .frame img {
+  float: left;
+  box-shadow: 8px 8px 19px black;
+}
+body div.content.index .frame img:first-child {
+  float: right;
+}
+body div.content.index .js .frame {
+  display: none;
+}
+body div.content.index a.display {
+  display: block;
+}
+body div.content.index a.hidden {
+  display: none;
+}
+body > div.contact {
+  padding: 35px 0 0 200px;
+}
+body > div.contact img {
+  position: relative;
+  top: -47px;
+  left: 440px;
+  padding: 0 20px 0 0;
+  margin: -206px 0 0;
+}
+body > div.contact div {
+  width: 25em;
+  float: left;
+  position: relative;
+  text-align: left;
+  color: #d2d2d2;
+  max-width: 800px;
+  padding: 5px;
+  margin: 0 0 5px 0;
+  font-size: 1.4em;
+}
+body > div.contact div ul {
+  border-left: 3px solid white;
+}
+body > div.contact div ul li {
+  font-size: 1em;
+  margin: 0 0 1em 15px;
+  font-family: Rockwell,"Rockwell","Courier New",Courier,Times,Georgia,serif;
+}
+body > div.contact div ul li em {
+  color: white;
+}
+body > div.contact div h1 {
+  font-size: 1.5em;
+  margin: 0 0 7px;
+  font-weight: 100;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  color: #d2d2d2;
+  display: table;
+}
+body > div.contact div > h2 {
+  font-family: arial;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: white;
+  border-bottom: 1px dotted #5a5a5a;
+  display: table;
+}
+body > div.contact div > h2 a {
+  display: inline;
+  font-size: inherit;
+  color: #0ba46c;
+}
+body > div.contact div > h2 a:hover {
+  color: #d2d2d2;
+  background-color: #0ba46c;
+}
+body > div.contact div h3 {
+  font-size: 10px;
+  color: #d2d2d2;
+  width: 300px;
+  text-align: left;
+  float: right;
+}
+body > div.contact div a {
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  border: 1px dashed gray;
+  color: white;
+  background-color: #0ba46c;
+  padding: 5px;
+  line-height: 40px;
+}
+body > div.contact div a:hover {
+  background-color: transparent;
+  border: 1px dashed #d2d2d2;
+}
+body > div.contact div p {
+  margin: 0 0 10px 0;
+}
+body > div.contact div strong {
+  font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+  font-weight: 100;
+}
+body > div.contact div em {
+  font-weight: 100;
+}
+body > div.contact div ol {
+  margin: 0 0 5px 0;
+  width: 400px;
+}
+body > div.contact div ol li {
+  margin: 0 0 5px 0;
+}
+body > div.contact div ol li input.submit {
+  cursor: pointer;
+  background-color: #0ba46c;
+  color: #d2d2d2;
+  border: 1px dashed #343434;
+  font-style: italic;
+  font-size: 1.5em;
+  width: 102.5%;
+  height: 35px;
+  -webkit-appearance: none;
+  padding: 5px;
+}
+body > div.contact div ol li input.submit:hover, body > div.contact div ol li input.submit:active {
+  border: 1px dashed white;
+  color: white;
+  background-color: transparent;
+}
+body > div.contact div ol li input {
+  height: 30px;
+}
+body > div.contact div ol li input, body > div.contact div ol li textarea {
+  border: none;
+  font-family: Georgia, serif;
+  padding: 5px;
+  width: 100%;
+  background-image: url("../img/input_background.png");
+  background-repeat: repeat-x;
+}
+body > div.contact div.block5 {
+  width: 50em;
+  clear: both;
+  float: none;
+}
+body div.bottom, body div.footer {
+  height: 150px;
+  clear: both;
+}
+body div.footer {
+  display: none;
+  position: relative;
+  border-top: 15px solid white;
+  background: url("../img/fabric_white.png");
+  width: 100%;
+  bottom: -30px;
+  box-shadow: inset 17px -17px 107px -35px black;
+}
+body div.footer div.container {
+  width: 660px;
+  font-size: 1.4em;
+  padding: 20px 0 0 160px;
+  margin: 0 auto;
+  font-family: arial;
+}
+body div.footer div.container div.about a {
+  color: #0ba46c;
+}
+body div.footer div.container div.about a:hover {
+  color: white;
+}
+body div.footer div.container h1 {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 100;
+  padding: 0 0 5px 0;
+}
+body div.footer div.container h1 a {
+  color: #0ba46c;
+  font-weight: 800;
+  display: block;
+  padding: 5px;
+}
+body div.footer div.container h1 a:hover {
+  background-color: #0ba46c;
+  color: white;
+}
+body div.footer div.container div.links h1.header {
+  background-image: url("../img/logo_black.png");
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: -10px auto 0 auto;
+  text-indent: -99999px;
+}
+body div.footer div.container div.contact {
+  float: right;
+}
+body div.footer div.container p, body div.footer div.container li {
+  font-family: arial;
+  color: #5a5a5a;
+  font-size: 0.9em;
+}
+body div.footer div.container div.about, body div.footer div.container div.links, body div.footer div.container div.contact, body div.footer div.container div.copyright {
+  width: 200px;
+  margin: 5px;
+  float: left;
+  display: inline;
+  border-top: 1px dashed #5a5a5a;
+  padding: 5px;
+  box-shadow: inset -1px 21px 12px -25px black;
+}
+body div.footer div.container div.about ul li, body div.footer div.container div.links ul li, body div.footer div.container div.contact ul li, body div.footer div.container div.copyright ul li {
+  text-align: center;
+  float: left;
+  padding: 0 5px;
+}
+body div.footer div.container div.about ul li a, body div.footer div.container div.links ul li a, body div.footer div.container div.contact ul li a, body div.footer div.container div.copyright ul li a {
+  color: #5a5a5a;
+}
+body div.footer div.container div.about ul li a:hover, body div.footer div.container div.links ul li a:hover, body div.footer div.container div.contact ul li a:hover, body div.footer div.container div.copyright ul li a:hover {
+  color: white;
+}

@@ -1,0 +1,168 @@
+@import "vars.scss";
+
+body.gallery {
+
+	div.head {
+		background: url("../img/headBackground.png");
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		padding: 25px 0 0 100px;
+			
+		>a {
+			margin: 0 18px 0 0;
+			float: left;
+			height: 18px;
+			background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+		}
+		a.photography {
+			width: 182px;
+			background-position: -0px -100px;
+			&:hover {
+				background-position: -0px -20px;
+			}
+		}
+		a.design {
+			width: 87px;
+			background-position: -0px -120px;
+			&:hover {
+				background-position: -0px -40px;
+			}
+		}
+		a.illustration {
+			width: 156px;
+			background-position: 0px -140px;
+			&:hover {
+				background-position: 0px -60px;
+			}
+		}	
+		a.monochrome {
+			width: 185px;
+			background-position: 0px -80px;
+			&:hover{
+				background-position: 0px 0px;
+			}
+		}
+		
+		a.photography.active {
+			background-position: -0px -20px;
+		}
+		a.design.active {
+			background-position: -0px -40px;
+		}
+		a.illustration.active {
+			background-position: 0px -60px;
+		}
+		
+	}
+	ul.nav {
+		color: $darkGrey;
+		clear: both;
+		
+			li {
+				margin: 3px 10px 0 0;
+				float: left;
+				font-size: 0.65em;
+				
+				a{
+					text-transform: uppercase;
+					font-style:italic;
+					color: $grey;
+					
+					&:hover {
+						color: white;
+						text-shadow: #FFFFFF 0 0 8px;
+					}
+				}
+			}	
+		}
+	
+
+	
+	div.gallery {
+		height: 100%;
+		
+		table.gallery {
+			margin: 75px 0 0 15px;
+			
+			.hoverRed, .hoverYellow, .hoverCyan {
+				background-color: black;
+			}		
+			.hoveredRed {
+				background-color: $whoColor;
+			}
+			.hoveredYellow {
+				background-color: $illustrationColor;
+			}
+			.hoveredCyan {
+				background-color: $designColor;
+			}
+			
+			th, td {
+				padding: 0 80px;
+			}
+			
+			th {
+				height: 500px;
+				min-width: 300px;
+				text-align: left;
+								
+				img {
+					float: left;
+					border-style:solid;
+					border-width: 1px;
+					border-color: #262626;
+				}
+				
+				
+				
+				h1, p {
+				width: 300px;
+				}
+				
+				p {
+				color: lightGrey;
+				font-size: 0.75em;
+				}
+				
+				h1 {
+				color: #d9d9d9;
+				font-size: 1.5em;
+				}
+				
+				h2 {
+				color: #a7a7a7;
+				font-size: 1em;
+				}
+				
+				h3 {
+				color: black;
+				font-size: 1.2em;
+				}
+			}
+			
+			td {
+				color: #c5c5c5;
+				font-size: 0.65em;
+			}
+		}
+	}
+	
+	div.footer{
+		color: $darkGrey;
+		font-size: 0.65em;
+		text-align: center;
+		text-transform: uppercase;
+		position: fixed;
+		bottom: 5px;
+		right: 0px;
+		width: 300px; height: 15px;
+		
+		a {
+			color: white;
+			&:hover{
+				text-shadow: #FFFFFF 0 0 8px;
+			}
+		}
+	}
+}

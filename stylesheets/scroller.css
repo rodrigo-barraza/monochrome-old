@@ -1,0 +1,65 @@
+#playScroller {
+  margin: 0 0 0 220px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#playScroller .derecha {
+  margin: 0 0 0 50%;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+#playScroller .derecha .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .derecha .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .derecha .topOn {
+  background-image: url("../img/derechaTop.png");
+}
+#playScroller .derecha .bottomOn {
+  background-image: url("../img/derechaBottom.png");
+}
+#playScroller .izquierda {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+}
+#playScroller .izquierda .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .izquierda .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .izquierda .topOn {
+  background-image: url("../img/izquierdaTop.png");
+}
+#playScroller .izquierda .bottomOn {
+  background-image: url("../img/izquierdaBottom.png");
+}
+#playScroller .centro {
+  position: absolute;
+  margin: 0 0 0 35%;
+  width: 15%;
+  height: 100%;
+}
+#playScroller .derechaOn {
+  background-image: url("../img/derechaOn.png");
+}
+#playScroller .izquierdaOn {
+  background-image: url("../img/izquierdaOn.png");
+}

@@ -1,0 +1,376 @@
+body {
+  background-color: #5e5c59;
+  overflow: hidden;
+}
+
+/* level one */
+#navigation {
+  position: absolute;
+  padding: 0 15px;
+  float: left;
+  width: 190px;
+  height: 100%;
+}
+#navigation ul {
+  overflow: hidden;
+  float: left;
+}
+
+#wrapGallery {
+  margin: 0 0 0 220px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+/* level two */
+div#header {
+  background-color: white;
+  top: 0px;
+  text-align: center;
+  min-height: 40px;
+}
+div#header h1 {
+  font: 18px/150% Calibri, Geneva, sans-serif;
+  color: #ad891c;
+}
+div#header h2 {
+  margin: -10px 0 0 0;
+  font: 11px/150% Calibri, Geneva, sans-serif;
+  color: #cfad44;
+  vertical-align: top;
+}
+div#header ul {
+  width: 100%;
+  background-color: white;
+}
+div#header ul li {
+  float: left;
+  font-size: 10px;
+  margin: 0px auto 0 auto;
+  width: 90px;
+  height: 18px;
+}
+div#header ul li a {
+  margin: 0 5px;
+  line-height: 18px;
+  font-weight: 800;
+}
+div#header ul li a:hover {
+  color: red;
+}
+div#header ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#sections {
+  height: 35px;
+  width: 100%;
+  background-color: white;
+}
+#sections li {
+  height: 25px;
+  width: 41px;
+  float: left;
+  margin: 5px 0 0 5px;
+}
+#sections a {
+  background-image: url("../img/shadow25.png");
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 23px;
+  display: block;
+  color: white;
+}
+#sections a:hover {
+  background-color: white;
+}
+
+div#currentSection {
+  width: 100%;
+  clear: both;
+  height: 35px;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+div#currentSection em {
+  line-height: 30px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 800;
+  margin: 0 5px;
+  width: 180px;
+  font-size: 18px;
+}
+
+em#current {
+  color: black;
+  z-index: 1;
+}
+
+em#hover {
+  display: none;
+  background-image: url("../img/currentHover.png");
+  background-color: red;
+  color: white;
+  z-index: 2;
+  position: relative;
+  top: -30px;
+}
+
+ul#sectionWorks {
+  float: left;
+  width: 170px;
+  margin: -10px 0 0 0;
+  padding: 0px 10px 25px 10px;
+  background-color: white;
+}
+ul#sectionWorks li {
+  color: black;
+  font-size: 10px;
+  font-weight: 100;
+}
+ul#sectionWorks li h1 {
+  color: black;
+  font-style: italic;
+}
+ul#sectionWorks li ul {
+  margin: 0 0 15px 0;
+}
+ul#sectionWorks li ul li {
+  color: #9b9b9b;
+  margin: 0 0 3px 0;
+  font-style: italic;
+}
+ul#sectionWorks li em {
+  color: black;
+  line-height: 50px;
+  font-style: normal;
+  font-size: 20px;
+}
+ul#sectionWorks li a {
+  margin: 0 10px 0 0;
+  padding: 0 0 0 5px;
+  color: #9b9b9b;
+  width: 160px;
+  display: block;
+}
+ul#sectionWorks li a:hover {
+  background-color: black;
+  color: magenta;
+}
+
+div#bottom {
+  float: left;
+  height: 101px;
+  width: 100%;
+  background-image: url("../img/sectionWorksBackground.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+ul#gallery {
+  margin: 50px 0 0 15px;
+  white-space: nowrap;
+}
+ul#gallery li {
+  margin: 0 10px 0 0px;
+  display: inline;
+}
+ul#gallery li img.item {
+  padding: 5px;
+  background-color: white;
+}
+ul#gallery li div {
+  float: left;
+  display: block;
+  position: relative;
+  min-height: 15px;
+  font-size: 10px;
+  background-image: url("../img/boxShadow.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+div.property span.category {
+  float: right;
+}
+
+div.description {
+  width: inherit;
+  padding: 5px;
+  margin: 5px 0 0 0;
+  background-color: white;
+}
+div.description span.icon {
+  float: right;
+}
+div.description span.film {
+  float: right;
+}
+
+div#box {
+  background-color: white;
+  background-image: url("../img/boxShadow.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  width: 500px;
+  font-family: arial,verdana,sans-serif;
+  padding: 15px;
+  margin: 20px 0 -5px 0;
+}
+
+div.who h1 {
+  color: #00bbcc;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+div.who h2 {
+  color: black;
+  font-size: 10px;
+}
+div.who p {
+  font-size: 10px;
+}
+div.who a {
+  margin: 10px 0 0 0;
+  display: block;
+  color: #c03d23;
+  font-size: 10px;
+}
+
+div.news h1 {
+  color: #43536a;
+  font-size: 12px;
+}
+div.news h2 {
+  color: black;
+  font-size: 10px;
+}
+div.news p {
+  font-size: 10px;
+  margin: 0 0 5px 0;
+}
+div.news a {
+  margin: 10px 0 0 0;
+  display: block;
+  color: #c03d23;
+  font-size: 10px;
+}
+div.news .date {
+  font-size: 10px;
+  color: red;
+  margin: 0 0 5px 0;
+}
+
+div#top {
+  background-color: red;
+  position: static;
+  width: 100%;
+  height: 200px;
+  z-index: 0;
+}
+
+#illustration {
+  background-color: #f49814;
+}
+#illustration:hover {
+  color: #f49814;
+}
+
+#photo {
+  background-color: #88aa33;
+}
+#photo:hover {
+  color: #88aa33;
+}
+
+#design {
+  background-color: #00bbcc;
+}
+#design:hover {
+  color: #00bbcc;
+}
+
+#web {
+  background-color: #c03d23;
+}
+#web:hover {
+  color: #c03d23;
+}
+
+#stretch {
+  clear: both;
+  height: 25px;
+  margin: 0 0 0 15px;
+  top: 550px;
+}
+#stretch span {
+  height: 25px;
+  display: block;
+  float: left;
+}
+
+#start {
+  background-image: url("../img/stretchStart35film.png");
+  width: 16px;
+}
+
+#mid {
+  background-image: url("../img/stretchMid35film.png");
+  background-repeat: repeat-x;
+  width: auto;
+}
+
+#end {
+  background-image: url("../img/stretchEnd35film.png");
+  width: 20px;
+}
+
+.bg1 {
+  background-color: #e5e5e1;
+}
+
+.bg2 {
+  background-color: #5e5c59;
+}
+
+#footer {
+  background-image: url("../img/cityscape.png");
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  z-index: -2;
+}
+
+#galleryRight {
+  width: 32px;
+  height: 30px;
+  background-image: url("../img/handRight.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 590px;
+  right: 10px;
+}
+
+#galleryLeft {
+  width: 32px;
+  height: 30px;
+  background-image: url("../img/handLeft.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 590px;
+  left: 235px;
+  background-position: right;
+}

@@ -1,0 +1,209 @@
+@import "vars.scss";
+
+div.content{
+	margin: 0px auto -165px;
+	padding: 90px 0 0 0; // Requires padding because margin height doesn't work in IE.
+	max-width: 996px;
+	// next line is from old layout; it moves the content while maintaining centering
+	// margin: 105px 0px -165px 160px;
+
+	iframe {
+		margin: 40px 0 0 0;
+	}
+
+	span#statement{
+		color: white;
+		background: white;
+		display: inline-block;
+		float: left;
+		clear: right;
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		font-size: 2em;
+		padding: 20px;
+		width: 250px;
+		position: absolute;
+		margin: 0 0 0 705px;
+		background-image: url("../img/paper.jpg");
+		font-style: italic;
+		text-align: center;
+
+		h1{
+			color: black;
+			color: rgba(0, 0, 0, 0.8);
+		}
+
+		p{
+			display: none;
+		}
+
+	}
+
+	span.info
+		{
+		display: block;
+		text-align: left;
+		padding: 40px 0 0;
+		text-align: center;
+		margin: 0 0 -30px 0;
+		em, h1, h2, p
+		{
+			color: $white;
+		}
+		a {
+			font-weight: 800;
+			color: $green;
+		}
+		a:hover {
+			color: white;
+		}
+			
+		em {
+			font-size: 1.1em;
+			}
+		
+		h1 {
+			font-family: Rockwell,"Rockwell","Courier New", Courier, Times, Georgia, serif;
+			font-size: 2em;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-weight: 100;
+		}
+		
+		h2 {
+			font-size: 1.2em;
+		}
+	}
+	>a{
+		margin: 0 0 100px 0;
+		display: block;
+		clear: both;
+		&:hover 
+		{
+		}
+		&:active 
+		{
+		}
+		img
+		{
+			box-shadow: 8px 8px 19px black;
+			border: 20px solid;
+		}
+		>h1 
+		{
+			color: white;
+			margin: 0 0 5px -20px;
+			font-size: 1em;
+			clear: both;
+			font-weight: 200;
+		}
+	}
+
+	ul#gallery {
+		li:nth-of-type(3n+2){
+		margin: 0px 78px;
+		}
+		li 
+		{
+			float: left;
+			min-height: 80px;
+			margin: 78px 0 0 0;
+			text-align: center;
+
+			a 
+			{
+				display: block;
+				box-shadow: 8px 8px 19px black;
+				width: 280px;
+				height: 280px;
+				background: black;
+				overflow: hidden;
+				color: rgba(0, 0, 0, 0.0);
+				background-image: url('../works/img/sprites.jpg') !important;
+				border-bottom: 7px solid black;
+
+				&:hover {
+					 
+					color: white;
+					border-bottom: 7px solid white;
+					box-shadow: inset 0px 0px 197px 90px black;
+				    animation: fadein 0.5s;
+				    -moz-animation: fadein 0.5s; /* Firefox */
+				    -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+				    -o-animation: fadein 0.5s; /* Opera */
+				}
+				&:active {	}
+
+				i{
+					font-size: 3em;
+					font-weight: 100;
+					font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+					line-height: 260px;
+				}
+			}
+			a[href$=dreamworks]{			background-position: 0 0;				&:hover{ /* background-position: 0 0 */	}}
+			a[href$=walks]{					background-position: -280px 0;			&:hover{ /* background-position: 0 0 */	}}
+			a[href$=rip-apart]{				background-position: -560px 0;			&:hover{ /* background-position: 0 0 */	}}
+
+			a[href$=spotless]{				background-position: 0 -280px;			&:hover{ /* background-position: 0 0 */	}}
+			a[href$=home]{					background-position: -280px -280px;		&:hover{ /* background-position: 0 0 */	}}
+			a[href$=urban]{					background-position: -560px -280px;		&:hover{ /* background-position: 0 0 */	}}
+
+			a[href$=light]{					background-position: 0 -560px;			&:hover{ /* background-position: 0 0 */	}}
+			a[href$=person]{				background-position: -280px -560px;		&:hover{ /* background-position: 0 0 */	}}
+			a[href$=imaginary-objects]{		background-position: -560px -560px;		&:hover{ /* background-position: 0 0 */	}}
+
+			a[href$=faces]{					background-position: 0 -840px;			&:hover{ /* background-position: 0 0 */	}}
+			a[href$=imaginary-landscapes]{	background-position: -280px -840px;		&:hover{ /* background-position: 0 0 */	}}
+			a[href$=hallow]{				background-position: -560px -840px;		&:hover{ /* background-position: 0 0 */	}}
+
+			a[href$=plantae]{				background-position: 0 -1120px;			&:hover{ /* background-position: 0 0 */	}}
+			a[href$=tv-date]{				background-position: -280px -1120px;	&:hover{ /* background-position: 0 0 */	}}
+			a[href$=ink]{					background-position: -560px -1120px;		&:hover{ /* background-position: 0 0 */	}}
+		
+			img 
+			{
+				text-align: center;
+				margin: 0 auto 10px auto;
+
+				&:hover{
+					display: none;
+				}
+			}
+			h1, h2 
+			{
+				text-align: left;
+				color: $white;
+				
+			}
+			h1 
+			{
+				display: inline;
+				font-size: 1.2em !important;
+				float: left;
+				font-weight: 100;
+				margin: 4px 0 0 1px;
+				padding: 0 0 0 3px;
+				border-left: 3px solid $white;
+				
+			}
+			h2 
+			{
+				font-size: 1em !important;
+				letter-spacing: 0.2em;
+				clear: both;
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				color: white;
+			}
+			span.state 
+			{
+				margin: 0 2px 0 3px;
+				width: 10px;
+				height: 10px;
+				display: inline;
+				float: right;
+				background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+			}
+		}
+	}
+}

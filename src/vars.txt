@@ -1,0 +1,20 @@
+$cyan: #288dc4;
+$yellow: yellow;
+$key: #1b1b1b;
+$magenta: #c609b8;
+$red: red;
+$black: black;
+$white: white;
+$grey: #9b9b9b;
+$illustrationColor: #f49814;
+$photographyColor: #88aa33;
+$designColor: #00bbcc;
+$webColor: #c03d23;
+$top: 50px;
+$sectionBox: 70px;
+$navWidth: 190px;
+
+$widthMargin: 220px;
+$widthDigtal: 333px;
+$widthList: 10px;
+$backgroundColor: #E5E5E1;

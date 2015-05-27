@@ -1,0 +1,138 @@
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  background-image: url("../img/footerBg.png");
+  z-index: 2;
+}
+
+/* #footer{
+}
+
+
+.photography{
+	#footerMenu{
+		background-image: url('../img/footerPhotography.png');
+	}
+	#holder {
+	background-color: black;
+	a {
+	color: #A1A1A1;
+	}
+	h1 a:hover {
+	color: white;
+	}
+	}
+}
+.neutral{
+	#footerMenu{
+		background-image: url('../img/footerNeutral.png');
+	}
+	#holder {
+	a {
+	color: $grey;
+	}
+	h1 a:hover {
+	color: black;
+	}
+	}
+}
+	
+#footerLeft {
+	background-image: url('../img/footerLeft.gif');
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	bottom: $footerHeight - 2;
+	z-index: -4;
+}
+
+#footerRight {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: $footerHeight;
+	right: 0px;
+	z-index: -4;
+}	
+
+#footerBack {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: $footerHeight;
+	z-index: -2;
+	width: 100%;
+	height: 100px;
+	z-index: -3;
+	}
+
+#footerAbove {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: $footerHeight;
+	z-index: -2;
+}
+#footerMenu {
+	font: 10px/10px Arial,Helvetica,sans-serif;
+	position: absolute;
+	width: 100%;
+	height: $footerHeight;
+	bottom: 0px;
+	color: black;
+	
+	#holder {
+	margin: 4px auto 0 auto;
+	height: 66px;
+	width: 150px;
+	}
+	
+	
+	
+	
+	.left {
+		float: left;
+			h1 {
+			margin: 10px 0 0 0;
+			width: 40px;
+			font:48px/100%  Verdana,sans-serif;
+			letter-spacing: -1px;
+			
+			text-align: right;
+			
+			a {
+			font-weight: 800;
+			line-height: 42px;
+			}
+	}
+	}
+	.right {
+		float: left;
+		margin: 14px 0 0 10px;
+		a {
+			display: block;}
+	}
+	
+	a.footerWho:hover {
+		color: $whoColor;
+	}
+	a.footerConnect:hover {
+		color: $connectColor;
+	}
+	a.footerPhotography:hover {
+		color: $photographyColor;
+	}
+	a.footerIllustration:hover {
+		color: $illustrationColor;
+	}
+	a.footerWeb:hover {
+		color: $whoColor;
+	}
+	a.footerDesign:hover {
+		color: $designColor;
+	}
+}
+
+*/

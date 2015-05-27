@@ -1,0 +1,2 @@
+:host{border-radius:2px;background:rgba(0,0,0,.2);padding:.7em .57em;text-transform:uppercase;text-align:center;cursor:pointer;user-select:none;-webkit-user-select:none}
+-moz-user-select:none,-ms-user-select:none,:host(:hover){opacity:.8}

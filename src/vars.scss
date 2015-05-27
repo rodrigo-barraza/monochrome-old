@@ -1,0 +1,41 @@
+$cyan: #288dc4;
+$yellow: yellow;
+$key: #1b1b1b;
+$magenta: #c609b8;
+$red: red;
+$black: #393939;
+$white: #d2d2d2;
+$green: #0ba46c;
+// $green: #1F6764;
+
+
+$grey: #808080;							//0%
+$lightGrey: $grey + #262626;			//+15%
+$lighterGrey: $lightGrey + #262626; 	//+30%
+$lightestGrey: $lighterGrey + #262626; 	//+45%
+$darkGrey: $grey - #262626;				//-15%
+$darkerGrey: $darkGrey - #262626;		//-30%
+$darkestGrey: $darkerGrey - #262626;	//-45%
+
+
+$startColor: white;
+$connectColor: white;
+
+$illustrationColor: #f49814;	//light orange
+$whoColor: $darkGrey;				//red
+$designColor: #00bbcc;			//cyan
+$homeColor: white;				//white
+
+
+
+
+$top: 50px;
+$sectionBox: 70px;
+$navHeight: 100px;
+
+$widthMargin: 220px;
+$widthDigtal: 333px;
+$widthList: 10px;
+$backgroundColor: #080808;
+
+$footerHeight: 70px;

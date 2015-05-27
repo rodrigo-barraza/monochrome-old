@@ -1,0 +1,8 @@
+#wrapGallery {
+  margin: 0 0 0 220px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: auto;
+  z-index: 1;
+}

@@ -1,0 +1,1163 @@
+/* line 3, ../sass/wrap.scss */
+#wrapGallery {
+  margin: 0 0 0 220px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+/* line 3, ../sass/scroller.scss */
+#playScroller {
+  margin: 0 0 0 220px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+/* line 11, ../sass/scroller.scss */
+#playScroller .derecha {
+  margin: 0 0 0 50%;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+/* line 17, ../sass/scroller.scss */
+#playScroller .derecha .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+/* line 22, ../sass/scroller.scss */
+#playScroller .derecha .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* line 28, ../sass/scroller.scss */
+#playScroller .derecha .topOn {
+  background-image: url("../img/derechaTop.png");
+}
+/* line 31, ../sass/scroller.scss */
+#playScroller .derecha .bottomOn {
+  background-image: url("../img/derechaBottom.png");
+}
+/* line 36, ../sass/scroller.scss */
+#playScroller .izquierda {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+}
+/* line 41, ../sass/scroller.scss */
+#playScroller .izquierda .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+/* line 46, ../sass/scroller.scss */
+#playScroller .izquierda .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* line 52, ../sass/scroller.scss */
+#playScroller .izquierda .topOn {
+  background-image: url("../img/izquierdaTop.png");
+}
+/* line 55, ../sass/scroller.scss */
+#playScroller .izquierda .bottomOn {
+  background-image: url("../img/izquierdaBottom.png");
+}
+/* line 60, ../sass/scroller.scss */
+#playScroller .centro {
+  position: absolute;
+  margin: 0 0 0 35%;
+  width: 15%;
+  height: 100%;
+}
+/* line 68, ../sass/scroller.scss */
+#playScroller .derechaOn {
+  background-image: url("../img/derechaOn.png");
+}
+/* line 72, ../sass/scroller.scss */
+#playScroller .izquierdaOn {
+  background-image: url("../img/izquierdaOn.png");
+}
+
+/* line 3, ../sass/navigation.scss */
+nav#navigation {
+  border-bottom: 1px solid #1b1b1b;
+  height: 45px;
+  width: 100%;
+  text-align: right;
+  top: 0;
+  left: 0;
+  background-image: url("../img/fabric_black.png");
+  z-index: 2;
+  box-shadow: 20px 0px 35px -14px black;
+  margin: 0 auto 0;
+  position: fixed;
+}
+/* line 16, ../sass/navigation.scss */
+nav#navigation div.wrapper {
+  max-width: 996px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 23, ../sass/navigation.scss */
+nav#navigation div.wrapper > a:first-child {
+  font-size: 1.7em;
+  color: black;
+  color: rgba(0, 0, 0, 0);
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 40px;
+  line-height: 47px;
+  text-indent: 51px;
+  margin: 0 0 0px 0;
+  display: block;
+  float: left;
+  position: relative;
+  bottom: -4px;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  text-transform: lowercase;
+}
+/* line 42, ../sass/navigation.scss */
+nav#navigation div.wrapper > a:first-child:hover, nav#navigation div.wrapper > a:first-child:active {
+  color: #d2d2d2 !important;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0);
+}
+/* line 53, ../sass/navigation.scss */
+nav#navigation ul {
+  display: block;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 61, ../sass/navigation.scss */
+nav#navigation ul li {
+  float: left;
+  margin: 0 0 0 30px;
+}
+/* line 65, ../sass/navigation.scss */
+nav#navigation ul li a {
+  color: #d2d2d2;
+  display: block;
+  padding: 2px 0;
+}
+/* line 69, ../sass/navigation.scss */
+nav#navigation ul li a:hover {
+  color: white;
+}
+/* line 73, ../sass/navigation.scss */
+nav#navigation ul .active {
+  background-color: #d2d2d2;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: black !important;
+  box-shadow: inset -79px 1px 45px -15px white;
+}
+/* line 81, ../sass/navigation.scss */
+nav#navigation ul p {
+  color: #343434;
+}
+/* line 86, ../sass/navigation.scss */
+nav#navigation ul a {
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  margin: 5px 0 0 0;
+  color: #0ba46c;
+  letter-spacing: 0.1em;
+  font-size: 1.4em;
+  font-weight: 100;
+  border-bottom: 2px solid transparent;
+  line-height: 30px;
+}
+/* line 98, ../sass/navigation.scss */
+nav#navigation ul a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+/* line 105, ../sass/navigation.scss */
+nav#navigation h1 {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 5px 0 0 0;
+  color: white;
+}
+/* line 114, ../sass/navigation.scss */
+nav#navigation h1 a {
+  color: #d2d2d2;
+  padding: 2px;
+  margin: 0 -2px;
+}
+/* line 119, ../sass/navigation.scss */
+nav#navigation h1 a:hover {
+  color: white;
+}
+
+/* line 127, ../sass/navigation.scss */
+a.toTop {
+  z-index: 99;
+  font-family: Arial;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  font-size: 1.1em;
+  line-height: 1em;
+  text-align: center;
+  color: #d2d2d2;
+  display: none;
+  padding: 5px 20px;
+}
+/* line 141, ../sass/navigation.scss */
+a.toTop:hover {
+  background-color: #0e0e0e;
+  color: #d2d2d2;
+}
+/* line 145, ../sass/navigation.scss */
+a.toTop:active {
+  background-color: #d2d2d2;
+  color: #d2d2d2;
+}
+/* line 150, ../sass/navigation.scss */
+a.toTop em.row2 {
+  line-height: -2em;
+  display: block;
+  margin: -43px 0 0 0;
+}
+
+/* line 157, ../sass/navigation.scss */
+body.start {
+  text-align: center;
+  color: white;
+}
+/* line 161, ../sass/navigation.scss */
+body.start h1 {
+  background-image: url("../img/header.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-style: italic;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0px auto 20px auto;
+  text-indent: -3000px;
+  white-space: nowrap;
+  color: white;
+  width: 295px;
+  height: 65px;
+  padding: 20px 0 0 0;
+}
+/* line 177, ../sass/navigation.scss */
+body.start h1 a {
+  outline: none;
+  display: block;
+  height: 63px;
+}
+/* line 184, ../sass/navigation.scss */
+body.start h2 {
+  color: white;
+}
+/* line 188, ../sass/navigation.scss */
+body.start > a {
+  margin: 0 10px;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+/* line 195, ../sass/navigation.scss */
+body.start > a.index1 {
+  background-image: url("../img/index.jpg");
+}
+/* line 197, ../sass/navigation.scss */
+body.start > a.index1:hover {
+  background-position: 0px 250px;
+}
+/* line 201, ../sass/navigation.scss */
+body.start > a.index2 {
+  background-image: url("../img/index.jpg");
+  background-position: 500px 0px;
+}
+/* line 204, ../sass/navigation.scss */
+body.start > a.index2:hover {
+  background-position: 500px 250px;
+}
+/* line 208, ../sass/navigation.scss */
+body.start > a.index3 {
+  background-image: url("../img/index.jpg");
+  background-position: 250px 0px;
+}
+/* line 211, ../sass/navigation.scss */
+body.start > a.index3:hover {
+  background-position: 250px 250px;
+}
+/* line 215, ../sass/navigation.scss */
+body.start h2 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #00bbcc;
+  margin: -7px 0 15px 0;
+  letter-spacing: .052em;
+}
+/* line 222, ../sass/navigation.scss */
+body.start ul.links {
+  margin: 5px 0 0 0;
+  font-family: inherit;
+}
+/* line 225, ../sass/navigation.scss */
+body.start ul.links li {
+  display: inline;
+  margin: 0 3px;
+}
+/* line 228, ../sass/navigation.scss */
+body.start ul.links li a {
+  padding: 0 5px;
+  color: inherit;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  color: #d2d2d2;
+}
+/* line 235, ../sass/navigation.scss */
+body.start ul.links li a:hover {
+  color: white;
+  background-color: #0ba46c;
+}
+/* line 241, ../sass/navigation.scss */
+body.start ul.links li a.works {
+  color: #0ba46c;
+}
+/* line 243, ../sass/navigation.scss */
+body.start ul.links li a.works:hover {
+  background-color: #0ba46c;
+  color: white;
+}
+
+/* line 3, ../sass/content.scss */
+article {
+  text-align: center;
+}
+/* line 5, ../sass/content.scss */
+article img {
+  border: 20px solid #d2d2d2;
+  margin: 0 0 50px 0;
+}
+/* line 9, ../sass/content.scss */
+article header {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  font-size: 3em;
+  line-height: 2em;
+  padding: 150px 0;
+  border-bottom: 43px dashed #d2d2d2;
+  width: 640px;
+  margin: 0 auto;
+}
+/* line 18, ../sass/content.scss */
+article header h1 {
+  display: inline;
+}
+/* line 22, ../sass/content.scss */
+article header a {
+  color: #0ba46c;
+}
+
+/* line 28, ../sass/content.scss */
+main#content {
+  margin: 90px auto -165px;
+  padding: 0px 0 150px 0;
+  max-width: 996px;
+}
+
+/* line 37, ../sass/content.scss */
+main#content iframe {
+  margin: 40px 0 0 0;
+}
+/* line 42, ../sass/content.scss */
+main#content span.info {
+  display: block;
+  text-align: left;
+  padding: 40px 0 0;
+  text-align: center;
+  margin: 0 0 -30px 0;
+}
+/* line 49, ../sass/content.scss */
+main#content span.info em, main#content span.info h1, main#content span.info h2, main#content span.info p {
+  color: #d2d2d2;
+}
+/* line 52, ../sass/content.scss */
+main#content span.info a {
+  font-weight: 800;
+  color: #0ba46c;
+}
+/* line 56, ../sass/content.scss */
+main#content span.info a:hover {
+  color: white;
+}
+/* line 60, ../sass/content.scss */
+main#content span.info em {
+  font-size: 1.1em;
+}
+/* line 64, ../sass/content.scss */
+main#content span.info h1 {
+  font-family: Rockwell,"Rockwell","Courier New", Courier, Times, Georgia, serif;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+/* line 73, ../sass/content.scss */
+main#content span.info h2 {
+  font-size: 1.2em;
+}
+/* line 77, ../sass/content.scss */
+main#content > a {
+  margin: 0 0 100px 0;
+  display: block;
+  clear: both;
+}
+/* line 88, ../sass/content.scss */
+main#content > a img {
+  box-shadow: 8px 8px 19px black;
+  border: 20px solid;
+}
+/* line 93, ../sass/content.scss */
+main#content > a > h1 {
+  color: white;
+  margin: 0 0 5px -20px;
+  font-size: 1em;
+  clear: both;
+  font-weight: 200;
+}
+
+/* line 103, ../sass/content.scss */
+body > nav#gallery {
+  margin: 0px auto -165px;
+  padding: 100px 0 0 0;
+  max-width: 996px;
+}
+/* line 108, ../sass/content.scss */
+body > nav#gallery ul {
+  height: 1960px;
+}
+/* line 110, ../sass/content.scss */
+body > nav#gallery ul li:nth-of-type(3n+2) {
+  margin: 0px 78px;
+}
+/* line 114, ../sass/content.scss */
+body > nav#gallery ul li {
+  float: left;
+  min-height: 80px;
+  margin: 78px 0 0 0;
+  text-align: center;
+}
+/* line 121, ../sass/content.scss */
+body > nav#gallery ul li a {
+  display: block;
+  box-shadow: 8px 8px 19px black;
+  width: 280px;
+  height: 280px;
+  background: black;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+  background-image: url("../works/img/sprites.jpg") !important;
+  border-bottom: 7px solid black;
+}
+/* line 132, ../sass/content.scss */
+body > nav#gallery ul li a:hover {
+  color: white;
+  border-bottom: 7px solid white;
+  box-shadow: inset 0px 0px 197px 90px black;
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s;
+  /* Firefox */
+  -webkit-animation: fadein 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 0.5s;
+  /* Opera */
+}
+/* line 144, ../sass/content.scss */
+body > nav#gallery ul li a i {
+  font-size: 3em;
+  font-weight: 100;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  line-height: 260px;
+}
+/* line 151, ../sass/content.scss */
+body > nav#gallery ul li a[href$=dreamworks] {
+  background-position: 0 0;
+}
+/* line 151, ../sass/content.scss */
+body > nav#gallery ul li a[href$=dreamworks]:hover {
+  /* background-position: 0 0 */
+}
+/* line 152, ../sass/content.scss */
+body > nav#gallery ul li a[href$=walks] {
+  background-position: -280px 0;
+}
+/* line 152, ../sass/content.scss */
+body > nav#gallery ul li a[href$=walks]:hover {
+  /* background-position: 0 0 */
+}
+/* line 153, ../sass/content.scss */
+body > nav#gallery ul li a[href$=rip-apart] {
+  background-position: -560px 0;
+}
+/* line 153, ../sass/content.scss */
+body > nav#gallery ul li a[href$=rip-apart]:hover {
+  /* background-position: 0 0 */
+}
+/* line 155, ../sass/content.scss */
+body > nav#gallery ul li a[href$=spotless] {
+  background-position: 0 -280px;
+}
+/* line 155, ../sass/content.scss */
+body > nav#gallery ul li a[href$=spotless]:hover {
+  /* background-position: 0 0 */
+}
+/* line 156, ../sass/content.scss */
+body > nav#gallery ul li a[href$=home] {
+  background-position: -280px -280px;
+}
+/* line 156, ../sass/content.scss */
+body > nav#gallery ul li a[href$=home]:hover {
+  /* background-position: 0 0 */
+}
+/* line 157, ../sass/content.scss */
+body > nav#gallery ul li a[href$=urban] {
+  background-position: -560px -280px;
+}
+/* line 157, ../sass/content.scss */
+body > nav#gallery ul li a[href$=urban]:hover {
+  /* background-position: 0 0 */
+}
+/* line 159, ../sass/content.scss */
+body > nav#gallery ul li a[href$=light] {
+  background-position: 0 -560px;
+}
+/* line 159, ../sass/content.scss */
+body > nav#gallery ul li a[href$=light]:hover {
+  /* background-position: 0 0 */
+}
+/* line 160, ../sass/content.scss */
+body > nav#gallery ul li a[href$=person] {
+  background-position: -280px -560px;
+}
+/* line 160, ../sass/content.scss */
+body > nav#gallery ul li a[href$=person]:hover {
+  /* background-position: 0 0 */
+}
+/* line 161, ../sass/content.scss */
+body > nav#gallery ul li a[href$=imaginary-objects] {
+  background-position: -560px -560px;
+}
+/* line 161, ../sass/content.scss */
+body > nav#gallery ul li a[href$=imaginary-objects]:hover {
+  /* background-position: 0 0 */
+}
+/* line 163, ../sass/content.scss */
+body > nav#gallery ul li a[href$=faces] {
+  background-position: 0 -840px;
+}
+/* line 163, ../sass/content.scss */
+body > nav#gallery ul li a[href$=faces]:hover {
+  /* background-position: 0 0 */
+}
+/* line 164, ../sass/content.scss */
+body > nav#gallery ul li a[href$=imaginary-landscapes] {
+  background-position: -280px -840px;
+}
+/* line 164, ../sass/content.scss */
+body > nav#gallery ul li a[href$=imaginary-landscapes]:hover {
+  /* background-position: 0 0 */
+}
+/* line 165, ../sass/content.scss */
+body > nav#gallery ul li a[href$=hallow] {
+  background-position: -560px -840px;
+}
+/* line 165, ../sass/content.scss */
+body > nav#gallery ul li a[href$=hallow]:hover {
+  /* background-position: 0 0 */
+}
+/* line 167, ../sass/content.scss */
+body > nav#gallery ul li a[href$=plantae] {
+  background-position: 0 -1120px;
+}
+/* line 167, ../sass/content.scss */
+body > nav#gallery ul li a[href$=plantae]:hover {
+  /* background-position: 0 0 */
+}
+/* line 168, ../sass/content.scss */
+body > nav#gallery ul li a[href$=tv-date] {
+  background-position: -280px -1120px;
+}
+/* line 168, ../sass/content.scss */
+body > nav#gallery ul li a[href$=tv-date]:hover {
+  /* background-position: 0 0 */
+}
+/* line 169, ../sass/content.scss */
+body > nav#gallery ul li a[href$=ink] {
+  background-position: -560px -1120px;
+}
+/* line 169, ../sass/content.scss */
+body > nav#gallery ul li a[href$=ink]:hover {
+  /* background-position: 0 0 */
+}
+/* line 172, ../sass/content.scss */
+body > nav#gallery ul li img {
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+/* line 176, ../sass/content.scss */
+body > nav#gallery ul li img:hover {
+  display: none;
+}
+/* line 181, ../sass/content.scss */
+body > nav#gallery ul li h1, body > nav#gallery ul li h2 {
+  text-align: left;
+  color: #d2d2d2;
+}
+/* line 187, ../sass/content.scss */
+body > nav#gallery ul li h1 {
+  display: inline;
+  font-size: 1.2em !important;
+  float: left;
+  font-weight: 100;
+  margin: 4px 0 0 1px;
+  padding: 0 0 0 3px;
+  border-left: 3px solid #d2d2d2;
+}
+/* line 198, ../sass/content.scss */
+body > nav#gallery ul li h2 {
+  font-size: 1em !important;
+  letter-spacing: 0.2em;
+  clear: both;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+/* line 206, ../sass/content.scss */
+body > nav#gallery ul li span.state {
+  margin: 0 2px 0 3px;
+  width: 10px;
+  height: 10px;
+  display: inline;
+  float: right;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+
+/* line 3, ../sass/footer.scss */
+footer {
+  /*
+  position: relative;
+  border-top: 15px solid white;
+  background: url("../img/fabric_white.png");
+  width: 100%;
+  bottom: -30px;
+  box-shadow: inset 17px -17px 107px -35px black;
+  */
+  margin: 40px 0 0 0;
+}
+/* line 14, ../sass/footer.scss */
+footer div.foot-image {
+  width: 100%;
+  height: 1920px;
+  background-image: url("../img/foot-image.gif");
+  background-position: 50%;
+}
+/* line 22, ../sass/footer.scss */
+footer div.container {
+  max-width: 1000px;
+  font-size: 1.4em;
+  padding: 40px 0 0 0px;
+  margin: 0 auto;
+  font-family: arial;
+}
+/* line 30, ../sass/footer.scss */
+footer div.container a.header {
+  background-image: url("../img/logo_white.png");
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0px auto 0 auto;
+  text-indent: -99999px;
+}
+/* line 39, ../sass/footer.scss */
+footer div.container p.aboutme {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+/* line 46, ../sass/footer.scss */
+footer div.container p.copyright {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+}
+/* line 53, ../sass/footer.scss */
+footer div.container div.about, footer div.container div.links, footer div.container div.contact, footer div.container div.copyright {
+  width: 200px;
+  margin: 5px;
+  float: left;
+  display: inline;
+  border-top: 1px dashed #5a5a5a;
+  padding: 5px;
+  box-shadow: inset -1px 21px 12px -25px black;
+}
+/* line 65, ../sass/footer.scss */
+footer div.container div.about ul li, footer div.container div.links ul li, footer div.container div.contact ul li, footer div.container div.copyright ul li {
+  text-align: center;
+  float: left;
+  padding: 0 5px;
+}
+/* line 71, ../sass/footer.scss */
+footer div.container div.about ul li a, footer div.container div.links ul li a, footer div.container div.contact ul li a, footer div.container div.copyright ul li a {
+  color: #5a5a5a;
+}
+/* line 74, ../sass/footer.scss */
+footer div.container div.about ul li a:hover, footer div.container div.links ul li a:hover, footer div.container div.contact ul li a:hover, footer div.container div.copyright ul li a:hover {
+  color: white;
+}
+/* line 84, ../sass/footer.scss */
+footer nav#gallery {
+  height: 280px;
+}
+/* line 87, ../sass/footer.scss */
+footer nav#gallery ul li {
+  float: left;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  margin: 10px 16px;
+}
+/* line 93, ../sass/footer.scss */
+footer nav#gallery ul li a {
+  color: #0ba46c;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  font-size: 2em;
+  font-style: italic;
+  padding: 5px;
+  line-height: 29px;
+  display: block;
+}
+/* line 102, ../sass/footer.scss */
+footer nav#gallery ul li a:hover {
+  color: #d2d2d2 !important;
+}
+
+/* line 1, ../sass/about.scss */
+ul#clients {
+  width: 800px;
+}
+/* line 3, ../sass/about.scss */
+ul#clients li {
+  display: block;
+  width: 250px;
+  height: 142px;
+  background-image: url("../img/clients.jpg");
+  float: left;
+  color: rgba(0, 0, 0, 0);
+  font-size: 1.6em;
+  font-weight: 100;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  line-height: 132px;
+  font-style: italic;
+  text-align: center;
+}
+/* line 17, ../sass/about.scss */
+ul#clients li:hover {
+  color: white;
+  box-shadow: inset 0px 0px 197px 90px black;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+/* line 27, ../sass/about.scss */
+ul#clients li:nth-child(0n+2) {
+  background-position: -250px 0px;
+}
+/* line 30, ../sass/about.scss */
+ul#clients li:nth-child(0n+3) {
+  background-position: -500px 0px;
+}
+/* line 33, ../sass/about.scss */
+ul#clients li:nth-child(0n+4) {
+  background-position: 0px -143px;
+}
+/* line 36, ../sass/about.scss */
+ul#clients li:nth-child(0n+5) {
+  background-position: -250px -143px;
+}
+/* line 39, ../sass/about.scss */
+ul#clients li:nth-child(0n+6) {
+  background-position: -500px -143px;
+}
+/* line 42, ../sass/about.scss */
+ul#clients li:nth-child(0n+7) {
+  background-position: 0px -286px;
+}
+
+/* line 11, ../sass/bioviral.scss */
+* {
+  margin: 0;
+}
+
+/* line 13, ../sass/bioviral.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 15, ../sass/bioviral.scss */
+html {
+  font-size: 100%;
+  width: 100%;
+}
+
+/* line 20, ../sass/bioviral.scss */
+body {
+  background-image: url("../img/fabric_black.png");
+  font-size: 62.5%;
+  background-color: white;
+  background-attachment: fixed;
+  font-family: Arial,Helvetica,;
+  color: #d2d2d2;
+}
+/* line 29, ../sass/bioviral.scss */
+body a {
+  color: inherit;
+}
+/* line 34, ../sass/bioviral.scss */
+body p.copyright {
+  color: white !important;
+  font-size: 2.2em;
+  text-align: center;
+  clear: both;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1020px) {
+  /* styles for narrow screens */
+}
+/* line 55, ../sass/bioviral.scss */
+body div.plusOne {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 61, ../sass/bioviral.scss */
+body > header {
+  width: 100%;
+  padding: 0 0 30px 0;
+  height: 500px;
+  background: url("http://www.monochro.me/img/main.jpg") center 0px;
+  margin: 45px 0 0 0;
+  text-align: center;
+  color: white;
+  font-size: 7em;
+  font-style: italic;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+/* line 78, ../sass/bioviral.scss */
+body > header h1 {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  width: 100%;
+  padding: 50px 0 0 0;
+  text-shadow: 1px 1px 1px black;
+}
+/* line 88, ../sass/bioviral.scss */
+body header.walks, body header.dreamwork, body header.rip-apart, body header.spotless, body header.the-aura-of-home, body header.urban-places, body header.light, body header.person, body header.imaginary-objects, body header.faces, body header.imaginary-landscapes, body header.hallow, body header.plantae, body header.tv-date, body header.ink {
+  background-image: url("http://www.monochro.me/img/headers.png") !important;
+  background-size: 1920px;
+  background-attachment: fixed;
+}
+/* line 94, ../sass/bioviral.scss */
+body header.walks {
+  background-position: center 0;
+}
+/* line 97, ../sass/bioviral.scss */
+body header.dreamwork {
+  background-position: center -796px;
+}
+/* line 100, ../sass/bioviral.scss */
+body header.rip-apart {
+  background-position: center -1592px;
+}
+/* line 104, ../sass/bioviral.scss */
+body header.spotless {
+  background-position: center -2388px;
+}
+/* line 107, ../sass/bioviral.scss */
+body header.the-aura-of-home {
+  background-position: center -3184px;
+}
+/* line 110, ../sass/bioviral.scss */
+body header.urban-places {
+  background-position: center -3980px;
+}
+/* line 114, ../sass/bioviral.scss */
+body header.light {
+  background-position: center -4776px;
+}
+/* line 117, ../sass/bioviral.scss */
+body header.person {
+  background-position: center -5572px;
+}
+/* line 120, ../sass/bioviral.scss */
+body header.imaginary-objects {
+  background-position: center -6368px;
+}
+/* line 124, ../sass/bioviral.scss */
+body header.faces {
+  background-position: center -7164px;
+}
+/* line 127, ../sass/bioviral.scss */
+body header.imaginary-landscapes {
+  background-position: center -7960px;
+}
+/* line 130, ../sass/bioviral.scss */
+body header.hallow {
+  background-position: center -8756px;
+}
+/* line 134, ../sass/bioviral.scss */
+body header.plantae {
+  background-position: center -9552px;
+}
+/* line 137, ../sass/bioviral.scss */
+body header.tv-date {
+  background-position: center -10348px;
+}
+/* line 140, ../sass/bioviral.scss */
+body header.ink {
+  background-position: center -11144px;
+}
+/* line 145, ../sass/bioviral.scss */
+body main#content.index {
+  margin: 0 0 0 210px;
+  max-height: 550px;
+  min-height: 0;
+  width: 800px;
+  position: absolute;
+  padding: 0 0 20px 60px;
+  overflow: hidden;
+}
+/* line 154, ../sass/bioviral.scss */
+body main#content.index .frame {
+  border: none;
+  width: 790px;
+  height: 455px;
+  float: left;
+  margin: 105px 0 0 -55px;
+}
+/* line 161, ../sass/bioviral.scss */
+body main#content.index .frame img {
+  float: left;
+  box-shadow: 8px 8px 19px black;
+}
+/* line 166, ../sass/bioviral.scss */
+body main#content.index .frame img:first-child {
+  float: right;
+  border: none!important;
+}
+/* line 173, ../sass/bioviral.scss */
+body main#content.index .js .frame {
+  display: none;
+}
+/* line 177, ../sass/bioviral.scss */
+body main#content.index a.display {
+  display: block;
+}
+/* line 181, ../sass/bioviral.scss */
+body main#content.index a.hidden {
+  display: none;
+}
+/* line 185, ../sass/bioviral.scss */
+body > main.contact {
+  width: 1000px;
+  margin: 45px auto 0 auto;
+}
+/* line 190, ../sass/bioviral.scss */
+body > main.contact form#contact li {
+  float: none;
+  min-height: 0px;
+}
+/* line 196, ../sass/bioviral.scss */
+body > main.contact span[itemprop=name] {
+  font-weight: 800;
+}
+/* line 200, ../sass/bioviral.scss */
+body > main.contact img {
+  position: relative;
+  top: -47px;
+  left: 440px;
+  padding: 0 20px 0 0;
+  margin: -206px 0 0;
+}
+/* line 208, ../sass/bioviral.scss */
+body > main.contact div {
+  float: left;
+  position: relative;
+  text-align: left;
+  color: #d2d2d2;
+  padding: 5px;
+  margin: 0 0 5px 0;
+  font-size: 1.4em;
+}
+/* line 221, ../sass/bioviral.scss */
+body > main.contact div ul li {
+  font-size: 1em;
+  margin: 0 0 6px 6px;
+  font-family: Rockwell,"Rockwell","Courier New",Courier,Times,Georgia,serif;
+}
+/* line 227, ../sass/bioviral.scss */
+body > main.contact div ul li em {
+  color: white;
+}
+/* line 234, ../sass/bioviral.scss */
+body > main.contact div h1 {
+  font-size: 1.5em;
+  margin: 0 0 7px;
+  font-weight: 100;
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  color: #d2d2d2;
+  display: table;
+}
+/* line 243, ../sass/bioviral.scss */
+body > main.contact div > h2 {
+  font-family: arial;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: white;
+  border-bottom: 1px dotted #5a5a5a;
+  display: table;
+}
+/* line 252, ../sass/bioviral.scss */
+body > main.contact div > h2 a {
+  display: inline;
+  font-size: inherit;
+  color: #0ba46c;
+}
+/* line 257, ../sass/bioviral.scss */
+body > main.contact div > h2 a:hover {
+  color: #d2d2d2;
+  background-color: #0ba46c;
+}
+/* line 264, ../sass/bioviral.scss */
+body > main.contact div h3 {
+  font-size: 10px;
+  color: #d2d2d2;
+  width: 300px;
+  text-align: left;
+  float: right;
+}
+/* line 272, ../sass/bioviral.scss */
+body > main.contact div a {
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  font-size: 1.1em;
+  font-style: italic;
+  border: 1px dashed gray;
+  color: white;
+  background-color: #0ba46c;
+  padding: 5px;
+  line-height: 40px;
+}
+/* line 284, ../sass/bioviral.scss */
+body > main.contact div a:hover {
+  background-color: transparent;
+  border: 1px dashed #d2d2d2;
+}
+/* line 291, ../sass/bioviral.scss */
+body > main.contact div p {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  padding: 20px;
+  color: #d2d2d2;
+  font-style: italic;
+  text-align: center;
+}
+/* line 301, ../sass/bioviral.scss */
+body > main.contact div strong {
+  font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+  font-weight: 100;
+}
+/* line 306, ../sass/bioviral.scss */
+body > main.contact div em {
+  font-weight: 100;
+}
+/* line 310, ../sass/bioviral.scss */
+body > main.contact div ol {
+  margin: 0 0 5px 0;
+  width: 400px;
+  display: inline;
+}
+/* line 315, ../sass/bioviral.scss */
+body > main.contact div ol li {
+  margin: 0 0 5px 0;
+}
+/* line 318, ../sass/bioviral.scss */
+body > main.contact div ol li input.submit {
+  cursor: pointer;
+  background-color: #0ba46c;
+  color: #d2d2d2;
+  border: 1px dashed #343434;
+  font-style: italic;
+  font-size: 1.5em;
+  width: 100%;
+  height: 35px;
+  -webkit-appearance: none;
+  padding: 5px;
+}
+/* line 331, ../sass/bioviral.scss */
+body > main.contact div ol li input.submit:hover, body > main.contact div ol li input.submit:active {
+  border: 1px dashed white;
+  color: white;
+  background-color: transparent;
+}
+/* line 338, ../sass/bioviral.scss */
+body > main.contact div ol li input {
+  height: 30px;
+}
+/* line 346, ../sass/bioviral.scss */
+body > main.contact div ol li input, body > main.contact div ol li textarea {
+  border: none;
+  font-family: Georgia, serif;
+  padding: 5px;
+  width: 100%;
+  background-image: url("../img/input_background.png");
+  background-repeat: repeat-x;
+  box-sizing: border-box;
+}
+/* line 361, ../sass/bioviral.scss */
+body > main.contact div.block5 {
+  clear: both;
+  float: none;
+}
+/* line 373, ../sass/bioviral.scss */
+body div.bottom, body footer {
+  clear: both;
+}

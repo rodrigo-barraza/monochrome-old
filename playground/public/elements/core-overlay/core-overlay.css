@@ -1,0 +1,3 @@
+.core-overlay-layer{top:0;left:0;z-index:2;display:block}
+.core-overlay-backdrop{opacity:0;position:fixed;top:0;left:0;width:100vw;height:100vw;background:#000}
+.core-overlay-backdrop.core-opened{opacity:.6}

@@ -1,0 +1,1000 @@
+@import "vars.scss";
+@import "gallery.scss";
+@import "wrap.scss";
+@import "scroller.scss";
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-size: 100%; // for scalability issues with em units in IE56 //
+	width: 100%;	
+}
+
+body {
+	background-image: url('../img/fabric_black.png');
+	// font-size: 100.01%;  Compensates for several browser bugs //
+	font-size: 62.5%; // 1em = 10px //
+	background-color: white;
+	background-attachment: fixed;
+	font-family: Arial,Helvetica,;
+	color: $white;
+	
+	a {
+		color: inherit;
+	}
+	
+	p.copyright
+	{
+		color: white !important;
+		font-size: 1.2em;
+		text-align: center;
+		clear: both;
+	}
+	
+	div.background_black {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		background-image: url('../img/fabric_black.png');
+		position: fixed;
+		z-index: -5;
+	}
+	div.background_white {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		background-image: url('../img/white_fabric.png');
+		position: fixed;
+		z-index: -5;
+		display: none;
+	}
+	
+	
+	div.header {
+		bottom-margin: 1px solid white;
+		height: 40px;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		z-index: 999;
+		
+		h1, h2 {
+			margin: 5px;
+			font-weight: 100;
+		}
+		h1 {
+			font-size: 1.2em;
+			text-transform: uppercase;
+			text-indent: -35px;
+			white-space: nowrap;
+			width: 80px;
+			height: 80px;
+			padding: 0 0 0 60px;
+			
+		}
+		
+		h2 {
+			margin: -4px 5px 0 0;
+			clear: left;
+			font-size: 1em;
+			letter-spacing: 0.30em;
+			text-transform: lowercase;
+				a {
+					font-weight: 100;
+					font-style: italic;
+					color: $darkGrey;
+
+
+				}		
+				a:hover{
+					color: white;
+					}
+		}
+	}	
+
+// Navigation : Body
+	div#navigation
+	{
+		text-align: right;
+		top: 0;
+		left: 0;
+	//	background-image: url('../img/fabric_black.png');
+		z-index: 2;
+		height: 100px;
+	//	box-shadow: 20px 0px 35px -14px black;
+		max-width: 960px;
+		margin: 0 auto 0;
+		position: relative;
+// Navigation : Body
+// Links: Navigation : Body;
+
+		ul 
+		{
+			display: block;
+			width: auto;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			li 
+			{
+				float: left;
+				margin: 0 0 0 30px;
+				a
+				{
+					color: $white;
+					display: block;
+					padding: 2px 0;
+					&:hover	{color: white;}
+				}
+			}
+			.active
+			{
+				background-color: $white;
+				background-repeat: no-repeat;
+				background-position: left;
+				color: black !important;
+				box-shadow: inset -79px 1px 45px -15px white;
+			}
+			p
+			{
+				color: $darkerGrey;
+			}
+			
+			a 
+			{
+				text-transform: uppercase;
+				font-style: italic;
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				margin: 5px 0 0 0;
+				color: $green;
+				letter-spacing: 0.1em;
+				font-size: 1.7em;
+				font-weight: 800;
+				margin: 0 0 8px 0;
+
+				&:hover {color:  white;}
+			}
+		}
+// Links : Navigation : Body
+		
+		> a:first-child
+		{
+			font-size: 1.1em;
+
+			color: rgba(0,0,0,0);
+			background-image: url('../img/logo.png');
+			background-repeat: no-repeat;
+			background-position: top right;
+			height: 80px;
+			line-height: 175px;
+			margin: 0 0 0px 0;
+			display: block;
+			float: left;
+			
+			&:hover,&:active
+			{
+				background-position: bottom right;
+				background-repeat: no-repeat;
+				color: rgba(0,0,0,0);
+			}
+			
+		}
+		
+		h1
+		{
+			font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+			text-transform: uppercase;
+			text-align: right;
+			font-size: 2em;
+			font-weight: 100;
+			padding: 5px 0 0 0;
+			color: white;
+			a
+			{
+				color: $white;
+				padding: 2px;
+				margin: 0 -2px;
+				&:hover 
+				{
+					color: white;
+				}
+			}
+		}
+	}		
+} 
+	a.toTop 
+	{
+		z-index: 99;
+		font-family: Arial;
+		position: fixed;
+		right: 0px;
+		bottom: 0px;
+		background-color: black;
+		font-size: 1.1em;
+		line-height: 1em;
+		text-align: center;
+		color: $white;
+		display: none;
+		padding: 5px 20px;
+		
+		&:hover {
+			background-color: $darkestGrey;
+			color: $white;
+		}
+		&:active {
+			background-color: $white;
+			color: $white;
+		}
+		
+		em.row2 {
+			line-height: -2em;
+			display: block;
+			margin: -43px 0 0 0;
+		}
+	}	
+	body.start 
+	{
+		text-align: center;
+		color: white;
+		h1 
+		{
+			background-image: url('../img/header.png');
+			background-position: bottom;
+			background-repeat: no-repeat;
+			font-style: italic;
+			font-weight: 100;
+			text-transform: uppercase;
+			margin: 0px auto 20px auto;
+			text-indent: -3000px;
+			white-space: nowrap;                  //because only the above line is indented
+			color: white;
+			width: 295px;
+			height: 65px;
+			padding: 20px 0 0 0;
+			
+			a 
+			{
+				outline: none;
+				display: block;
+				height: 63px;
+			}
+		}
+		
+		h2 {
+			color: white;
+		}
+		
+		>a {
+			margin: 0 10px;
+			height: 250px;
+			width: 250px;
+			display: inline-block;
+		}
+		
+		>a.index1{
+			background-image: url('../img/index.jpg');	
+			&:hover {
+				background-position: 0px 250px;
+			}
+		}
+		>a.index2{
+			background-image: url('../img/index.jpg');	
+			background-position: 500px 0px;
+				&:hover {
+				background-position: 500px 250px;
+				}
+		}
+		>a.index3{
+			background-image: url('../img/index.jpg');	
+			background-position: 250px 0px;
+				&:hover {
+					background-position: 250px 250px;
+				}
+		}v
+		
+		h2 {
+			font-size: 2em;
+			font-weight: 100;
+			color: $designColor;
+			margin: -7px 0 15px 0;
+			letter-spacing: .052em;
+		}
+		
+		ul.links {
+			margin: 5px 0 0 0;
+			font-family: inherit;
+			li {
+				display: inline;
+				margin: 0 3px;
+				a{
+					padding: 0 5px;
+					color: inherit;
+					font-size: 2em;
+					font-weight: 200;
+					letter-spacing: -0.03em;
+					color: $white;
+					&:hover {
+						color: white;
+						background-color: $green;
+						}
+				}
+				a.works {
+					color: $green;
+					&:hover {
+						background-color: $green;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+ul#clients{
+	width: 800px;
+	li{
+		display: block;
+		width: 250px;
+		height: 142px;
+		background-image: url('../img/clients.jpg');
+		float: left;
+		color: rgba(0, 0, 0, 0.0);
+		font-size: 1.6em;
+		font-weight: 100;
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		line-height: 132px;
+		font-style: italic;
+		text-align: center;
+		&:hover 
+		{ 
+			color: white;
+			box-shadow: inset 0px 0px 197px 90px black;
+		    animation: fadein 2s;
+		    -moz-animation: fadein 2s; /* Firefox */
+		    -webkit-animation: fadein 2s; /* Safari and Chrome */
+		    -o-animation: fadein 2s; /* Opera */
+		};
+	}
+
+	li:nth-child(0n+2){
+		background-position: -250px 0px;
+	}
+	li:nth-child(0n+3){
+		background-position: -500px 0px;
+	}
+	li:nth-child(0n+4){
+		background-position: 0px -143px;
+	}
+	li:nth-child(0n+5){
+		background-position: -250px -143px;
+	}
+	li:nth-child(0n+6){
+		background-position: -500px -143px;
+	}
+	li:nth-child(0n+7){
+		background-position: 0px -286px;
+	}
+
+}
+
+body 
+{
+	div.plusOne
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	div.content 
+	{
+		margin: 80px auto -165px;
+		max-width: 960px;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+
+		// next line is from old layout; it moves the content while maintaining centering
+		// margin: 105px 0px -165px 160px;
+
+		position: relative;
+		text-align: center;
+
+		iframe {
+			margin: 40px 0 0 0;
+		}
+		span.info
+		{
+			display: block;
+			text-align: left;
+			padding: 40px 0 0;
+			text-align: center;
+			margin: 0 0 -30px 0;
+			em, h1, h2, p
+			{
+				color: $white;
+			}
+			a {
+				font-weight: 800;
+				color: $green;
+			}
+			a:hover {
+				color: white;
+			}
+				
+			em {
+				font-size: 1.1em;
+				}
+			
+			h1 {
+				font-family: Rockwell,"Rockwell","Courier New", Courier, Times, Georgia, serif;
+				font-size: 2em;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-weight: 100;
+			}
+			
+			h2 {
+				font-size: 1.2em;
+			}
+		}
+		>a 
+		{
+			margin: 100px auto;
+			display: table;
+			&:hover 
+			{
+			}
+			&:active 
+			{
+			}
+			img
+			{
+				box-shadow: 8px 8px 19px black;
+				border: 100px solid;
+			}
+			>h1 
+			{
+				color: white;
+				margin: 0 0 5px -20px;
+				font-size: 1em;
+				clear: both;
+				font-weight: 200;
+			}
+		}
+	span.box:nth-of-type(3n+2){
+		margin: 0 45px 45px 45px;
+	}
+	span.box 
+	{
+			float: left;
+			min-height: 80px;
+			margin: 0 0 45px 0;
+
+			span 
+			{
+				display: block;
+
+			}
+			a 
+			{
+				display: block;
+				box-shadow: 8px 8px 19px black;
+				width: 290px;
+				height: 270px;
+				border-top: 10px solid black;
+				border-bottom: 10px solid black;
+				background: black;
+				overflow: hidden;
+				color: rgba(0, 0, 0, 0.0);
+				&:hover 
+				{
+					 
+					color: white;
+					box-shadow: inset 0px 0px 197px 90px black;
+				    animation: fadein 2s;
+				    -moz-animation: fadein 2s; /* Firefox */
+				    -webkit-animation: fadein 2s; /* Safari and Chrome */
+				    -o-animation: fadein 2s; /* Opera */
+				}
+				&:active 
+				{
+				}
+
+				i{
+					font-size: 3em;
+					font-weight: 100;
+					font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+					line-height: 225px;
+				}
+			}
+			a[href$=walks]{
+				background-image: url('../works/img/walks.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=dreamworks]{
+				background-image: url('../works/img/dreamworks.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=light]{
+				background-image: url('../works/img/light.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=person]{
+				background-image: url('../works/img/person.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=earth]{
+				background-image: url('../works/img/earth.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=faces]{
+				background-image: url('../works/img/faces.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=multiple_exposure]{
+				background-image: url('../works/img/multiple_exposure.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=home]{
+				background-image: url('../works/img/home.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=pbp_video]{
+				background-image: url('../works/img/pbp_video.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=plantae]{
+				background-image: url('../works/img/plantae.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=ink]{
+				background-image: url('../works/img/ink.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=urban]{
+				background-image: url('../works/img/urban.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=floppy_bits]{
+				background-image: url('../works/img/floppy_bits.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=hallow]{
+				background-image: url('../works/img/hallow.jpg');
+
+				&:hover{
+					// background-image: none;
+				}
+			}
+			a[href$=untitled_film]{
+				background-image: url('../works/img/untitled_film.jpg');
+				&:hover, &:active
+				{
+					background-position: 0 -250px;
+				}
+			}
+		
+			img 
+			{
+				text-align: center;
+				margin: 0 auto 10px auto;
+
+				&:hover{
+					display: none;
+				}
+			}
+			h1, h2 
+			{
+				text-align: left;
+				color: $white;
+				
+			}
+			h1 
+			{
+				display: inline;
+				font-size: 1.2em !important;
+				float: left;
+				font-weight: 100;
+				margin: 4px 0 0 1px;
+				padding: 0 0 0 3px;
+				border-left: 3px solid $white;
+				
+			}
+			h2 
+			{
+				font-size: 1em !important;
+				letter-spacing: 0.2em;
+				clear: both;
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				color: white;
+			}
+			span.state 
+			{
+				margin: 0 2px 0 3px;
+				width: 10px;
+				height: 10px;
+				display: inline;
+				float: right;
+				background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+			}
+		}
+	}
+	div.content.index {
+		margin: 0 0 0 210px;
+		max-height: 550px;
+		min-height: 0;
+		width: 800px;
+		position: absolute;
+		padding: 0 0 20px 60px;
+		overflow: hidden;
+		.frame 
+		{
+			border: none;
+			width: 790px;
+			height: 455px;
+			float: left;
+			margin: 105px 0 0 -55px;
+			img
+			{
+				float: left;
+				box-shadow: 8px 8px 19px black;
+			}
+			img:first-child
+			{
+				float: right;
+				border: none!important;
+
+			}
+		} 
+		.js .frame 
+		{ 
+			display: none;
+		}
+		a.display
+		{
+			display: block;
+		}
+		a.hidden
+		{
+			display: none;
+		}
+	}
+	>div.contact
+	{
+
+		span[itemprop=name]{
+			font-weight:800;
+		}
+		img
+		{
+			position: relative;
+			top: -47px;
+			left: 440px;
+			padding: 0 20px 0 0;
+			margin: -206px 0 0;
+		}
+		div
+		{
+			float: left;
+			position: relative;
+			text-align: left;
+			color: $white;
+			padding: 5px;
+			margin: 0 0 5px 0;
+			font-size: 1.4em;
+
+			
+			ul
+			{
+				li
+				{
+					font-size: 1em;
+					margin: 0 0 6px 6px;
+					font-family: Rockwell,"Rockwell","Courier New",Courier,Times,Georgia,serif;
+					
+					em
+					{
+						color: white;
+					}
+				}
+			}
+			
+			h1 
+			{
+				font-size: 1.5em;
+				margin: 0 0 7px;
+				font-weight: 100;
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				color: $white; 
+				display: table;
+			}
+			>h2 
+			{
+				font-family: arial;
+				font-size: 1.2em;
+				letter-spacing: 0.02em;
+				font-weight: 800;
+				color: white;
+				border-bottom: 1px dotted $darkGrey;
+				display: table;
+				a 
+				{
+					display: inline;
+					font-size: inherit;
+					color: $green;
+					&:hover 
+					{
+						color: $white;
+						background-color: $green;
+					}
+				}
+			}
+			h3 
+			{
+				font-size: 10px;
+				color: $white;
+				width: 300px;
+				text-align: left;
+				float: right;
+			}
+			a 
+			{
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				font-size: 1.1em;
+				font-style: italic;
+				border: 1px dashed $grey;
+				color: white;
+				background-color: $green;
+				padding: 5px;
+				line-height: 40px;
+				
+				
+				&:hover 
+				{
+					background-color: transparent;
+					border: 1px dashed $white;
+					
+				}
+			}
+			p
+			{
+				font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+				margin: 0 0 10px 0;
+				font-size: 1.6em;
+				background-image: url('../img/paper.jpg');
+				padding: 20px;
+				color: rgba(0,0,0,0.8);
+				font-style: italic;
+			}
+			strong
+			{
+				font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+				font-weight: 100;
+			}
+			em
+			{
+				font-weight: 100;
+			}
+			ol
+			{
+				margin: 0 0 5px 0;
+				width: 400px;
+				display: inline;
+				li 
+				{
+					margin: 0 0 5px 0;
+					input.submit 
+					{
+						cursor: pointer;
+						background-color: $green;
+						color: $white;
+						border: 1px dashed $darkerGrey;
+						font-style: italic;
+						font-size: 1.5em;
+						width: 100%;
+						height: 35px;
+						-webkit-appearance: none;
+						padding: 5px;
+						
+						&:hover, &:active
+						{
+							border: 1px dashed white;
+							color: white;
+							background-color: transparent;
+						}
+					}
+					input
+					{
+						height: 30px;
+					}
+					textarea
+					{
+						
+					}
+					input, textarea 
+					{
+						border: none;
+						font-family: Georgia, serif;
+						padding: 5px;
+						width: 100%;
+						background-image: url("../img/input_background.png");
+						background-repeat: repeat-x;
+						box-sizing: border-box;
+
+					}
+					
+				}
+			}
+		}
+		div.block5
+		{
+			clear: both;
+			float: none;
+		}
+		div.exhibitions
+		{
+			ul
+			{
+			}
+		}
+	}
+	div.bottom, div.footer
+	{
+		height: 150px;
+		clear: both;
+	}
+	div.bottom 
+	{
+	}
+	div.footer 
+	{
+		display: none;
+		position: relative;
+		border-top: 15px solid white;
+		background: url("../img/fabric_white.png");
+		width: 100%;
+		bottom: -30px;
+		box-shadow: inset 17px -17px 107px -35px black;
+		
+		div.container
+		{
+			width: 660px;
+			font-size: 1.4em;
+			padding: 20px 0 0 160px;
+			margin: 0 auto;
+			font-family: arial;
+			
+			div.about
+			{
+				a
+				{
+					color: $green;
+					&:hover
+					{
+						color: white;
+					}
+				}
+			}
+			
+			h1 {
+				color: white;
+				font-size: 0.8em;
+				font-weight: 100;
+				padding: 0 0 5px 0;
+				a
+				{
+					color: $green;
+					font-weight: 800;
+					display: block;
+					padding: 5px;
+					
+					&:hover
+					{
+						background-color: $green;
+						color: white;
+					}
+				}
+			}
+			div.links
+			{
+				h1.header 
+				{
+				background-image: url('../img/logo_black.png');
+				width: 80px;
+				height: 80px;
+				display: block;	
+				margin: -10px auto 0 auto;
+				text-indent: -99999px;
+				}
+			}
+			div.contact
+			{
+				float: right;
+			}
+			p, li
+			{
+				font-family: arial;
+				color: $darkGrey;
+				font-size: 0.9em;
+			}
+			div.about, div.links, div.contact, div.copyright
+			{
+				width: 200px;
+				margin: 5px;
+				float: left;
+				display: inline;
+				border-top: 1px dashed $darkGrey;
+				padding: 5px;
+				box-shadow: inset -1px 21px 12px -25px black;
+				
+				ul
+				{
+					li
+					{
+						text-align: center;
+						float: left;
+						padding: 0 5px;
+						
+						a
+						{
+							color: $darkGrey;
+							&:hover
+							{
+								color: white;
+							}
+						}	
+						
+					}
+				}
+			}
+		}
+	}
+}
+ 

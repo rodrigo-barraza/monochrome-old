@@ -1,0 +1,37 @@
+/* All Rights Reserved to Rodrigo Barraza; bioviral.net */
+/* Do not use without permission */
+/* ----- */
+/* Reset */
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, 
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td  
+					{
+					margin: 0;
+					padding: 0;
+					border: 0;
+					outline: none;
+					line-height: 100%;
+					}
+h1, h2, h3, h4, h5, h6
+					{
+					font-size: 100%;
+					color: black;
+					}
+html, body 			{
+					}
+ul,li 				{
+					list-style-type:none;
+					}
+body 				{
+					font:100%/150% Arial,Geneva,sans-serif; color:black;
+					text-align: left;
+					}	
+a:link, a:visited, 
+a:hover, a:active
+					{
+					font-style: normal;
+					text-decoration:none;
+					font-weight: normal;
+					}
+					
+/*End */

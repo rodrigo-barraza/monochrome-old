@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+<url>
+  <loc>http://www.monochro.me/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/who/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/contact/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/walks</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/dreamwork</loc>
+  <image:image>
+       <image:loc>http://www.monochro.me/images/dreamwork-1.jpg</image:loc> 
+       <image:title>Dreamwork - Early beach days</image:title>
+       <image:caption>Layers of sand, sea and sky on photographic film.</image:caption>
+       <image:geo_location>Vancouver, Canada</image:geo_location>
+    </image:image>
+  <image:image>
+       <image:loc>http://www.monochro.me/images/dreamwork-2.jpg</image:loc> 
+       <image:title>Dreamwork - Multiple personalities</image:title>
+       <image:caption>Various people and places captured through multiple exposures.</image:caption>
+       <image:geo_location>Vancouver, Canada</image:geo_location>
+    </image:image>
+  <image:image>
+       <image:loc>http://www.monochro.me/images/dreamwork-3.jpg</image:loc> 
+       <image:title>Dreamwork - Every corner in a yard</image:title>
+       <image:caption>Multiple exposure photographic series.</image:caption>
+       <image:geo_location>Vancouver, Canada</image:geo_location>
+    </image:image>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/rip-apart</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/spotless</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/home</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/urban</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/light</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/person</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/imaginary-objects</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/faces</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/imaginary-landscapes</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/hallow</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/plantae</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/tv-date</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.monochro.me/ink</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>

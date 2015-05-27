@@ -1,0 +1,591 @@
+@import "vars.scss";
+@import "gallery.scss";
+@import "wrap.scss";
+@import "scroller.scss";
+
+html, body {
+}
+
+html {
+	font-size: 100%; // for scalability issues with em units in IE56 //
+	width: 100%;
+	height: 100%;	
+}
+
+body {
+	background-image: url('../img/black_fabric.png');
+
+	// font-size: 100.01%;  Compensates for several browser bugs //
+	font-size: 62.5%; // 1em = 10px //
+	background-color: $black;
+	background-attachment: fixed;
+	font-family: "Helvetica Neue",Arial,Helvetica,;
+	color: $white;
+	
+	a {
+		color: inherit;
+	}
+	
+	div.background_black {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		background-image: url('../img/black_fabric.png');
+		position: fixed;
+		z-index: -5;
+	}
+	div.background_white {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		background-image: url('../img/white_fabric.png');
+		position: fixed;
+		z-index: -5;
+		display: none;
+	}
+	
+	div.header.black {
+		background-image: url('../img/header_black.png');
+	}
+	
+	div.header.white {
+		background-image: url('../img/header_white.png');
+	}
+	div.header {
+		bottom-margin: 1px solid white;
+		height: 40px;
+		width: 100%;
+		position: fixed;
+		z-index: 999;
+		
+		h1, h2 {
+			margin: 5px;
+			float: right;
+			font-weight: 100;
+		}
+		h1 {
+			color: $white;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			text-indent: -3000px;
+			white-space: nowrap;
+			width: 183px;
+			
+			a {
+				background-image: url('../img/header_works.png');
+				height: 35px;
+				display: block;
+			}
+		}
+		h2 {
+			margin: -4px 5px 0 0;
+			clear: right;
+			font-size: 1em;
+			letter-spacing: 0.30em;
+			text-transform: lowercase;
+				a {
+					font-weight: 100;
+					font-style: italic;
+					color: $darkGrey;
+				}		
+				a:hover{
+					color: white;
+					}
+		}
+	}	
+	div.navigation {
+		text-align: right;
+		position: fixed;
+		left: 0;
+		padding: 40px 10px 0 0;
+		border-right: 1px dashed $darkerGrey;
+		z-index: 2;
+		height: 100%;
+		
+		h1, h2, ul {
+			margin: 0 0 0 25px;
+		}
+		h1 {
+			text-transform: uppercase;
+			font-size: 2em;
+			em { color: white; font-weight: 100; }
+			a {
+				color: $green;
+				font-style: italic;
+				&:hover {color:  white;}
+				}
+		}
+		h2{
+			font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+			text-transform: uppercase;
+			text-align: right;
+			font-size: 1.5em;
+			font-weight: 100;
+			padding: 10px 0 0 0;
+			color: white;
+			a{
+				&:hover {
+					background-color: $green;
+				}
+			}
+		}
+		ul {
+			li {
+				margin: 4px 0 0 0;
+				font-size: 11px;
+				text-transform: uppercase;
+				a{
+					color: $white;
+				}
+				a:hover{
+					color: $green;
+					}
+				}
+				a.active{
+					background-color: $green;
+					color: white !important;
+					padding: 0 0 0 6px;
+				}
+			}
+		}	
+	} 
+	a.toTop 
+	{
+		border-radius: 3px;
+		font-family: Arial;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		background-color: $green;
+		font-size: 1.1em;
+		line-height: 1em;
+		text-align: center;
+		color: white;
+		display: none;
+		padding: 15px 20px;
+		
+		&:hover {
+			background-color: $darkestGrey;
+			color: $white;
+		}
+		&:active {
+			background-color: $white;
+			color: $white;
+		}
+		
+		em.row2 {
+			line-height: -2em;
+			display: block;
+			margin: -43px 0 0 0;
+		}
+	}	
+body.start {
+	text-align: center;
+	color: white;
+	
+	h1 {
+		background-image: url('../img/header.png');	
+		font-style: italic;
+		font-weight: 100;
+		text-transform: uppercase;
+		margin: 40px auto 20px auto;
+		text-indent: -3000px;
+		white-space: nowrap;                  //because only the above line is indented
+		color: white;
+		width: 295px;
+		height: 65px;
+		
+		a {
+			outline: none;
+			display: block;
+			height: 63px;
+		}
+	}
+	
+	>a {
+		margin: 0 10px;
+		height: 250px;
+		width: 250px;
+		display: inline-block;
+	}
+	
+	>a.index1{
+		background-image: url('../img/index.jpg');	
+		&:hover {
+			background-position: 0px 250px;
+		}
+	}
+	>a.index2{
+		background-image: url('../img/index.jpg');	
+		background-position: 500px 0px;
+			&:hover {
+			background-position: 500px 250px;
+			}
+	}
+	>a.index3{
+		background-image: url('../img/index.jpg');	
+		background-position: 250px 0px;
+			&:hover {
+				background-position: 250px 250px;
+			}
+	}v
+	
+	h2 {
+		font-size: 2em;
+		font-weight: 100;
+		color: $designColor;
+		margin: -7px 0 15px 0;
+		letter-spacing: .052em;
+	}
+	
+	ul.links {
+		margin: 5px 0 0 0;
+		font-family: inherit;
+		li {
+			display: inline;
+			margin: 0 3px;
+			a{
+				padding: 0 5px;
+				color: inherit;
+				font-size: 2em;
+				font-weight: 200;
+				letter-spacing: -0.03em;
+				&:hover {
+					background-color: $green;
+					}
+			}
+			a.works {
+				color: $green;
+				&:hover {
+					background-color: $green;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+
+body 
+{	
+	div.content 
+	{
+		float: right;
+		margin: 40px 0 0 305px;
+		left: -50%;
+		position: relative;
+		text-align: left;
+		max-width: 1000px;
+		div.type 
+		{
+		iframe {
+			margin: 0 0 15px 0;
+		}
+		span.info
+		{
+			display: block;
+			text-align: left;
+			padding: 0 0 20px 0;
+			em, h1, h2, p
+			{
+				color: $white;
+			}
+			a {
+				font-weight: 800;
+				color: $green;
+			}
+			a:hover {
+				color: white;
+			}
+				
+			em {
+				font-size: 1.1em;
+				}
+			
+			h1 {
+				font-size: 2em;
+			}
+			
+			h2 {
+				font-size: 1.2em;
+			}
+		}
+		left: 50%;
+		position: relative;
+		text-align: center;	
+		>a 
+		{
+			margin: 0 0 55px 0;
+			border: 1px solid $black;
+			display: block;
+			&:hover 
+			{
+				border: 1px solid $white;
+			}
+			&:active 
+			{
+				border: 1px solid $green;
+			}
+			>h1 
+			{
+				color: white;
+				margin: 0 0 5px -20px;
+				font-size: 1em;
+				clear: both;
+				font-weight: 200;
+			}
+		}
+	}
+	span.box 
+	{
+			float: left;
+			min-height: 80px;
+			width: 120px;
+			padding: 20px;
+			margin: 0 auto;
+			span 
+			{
+				display: block;
+				width: 120px;
+			}
+			a 
+			{
+				display: block;
+				border: 1px solid $black;
+				width: 120px;
+				height: 120px;
+				&:hover 
+				{
+					border: 1px solid $white;
+				}
+				&:active 
+				{
+					border: 1px solid $green;
+				}
+			}
+		
+			img 
+			{
+				text-align: center;
+				margin: 0 auto 10px auto;
+				display: block;
+			}
+			h1, h2 
+			{
+				text-align: left;
+				color: $white;
+				
+			}
+			h1 
+			{
+				display: inline;
+				font-size: 1.1em !important;
+				float: left;
+				font-weight: 200;
+				padding: 0 0 0 5px;
+				
+			}
+			h2 
+			{
+				font-size: 1.2em !important;
+				clear: both;
+				font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+			}
+			span.state 
+			{
+				margin: 0 2px 0 3px;
+				width: 10px;
+				height: 10px;
+				display: inline;
+				float: right;
+				background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+			}
+		}
+	}
+	>div.contact
+	{
+		padding: 35px 0 0 165px;
+		div
+		{
+			width: 25em;
+			float: left;
+			position: relative;
+			text-align: left;
+			color: $white;
+			max-width: 800px;
+			padding: 5px;
+			margin: 0 0 5px 0;
+			font-size: 1.4em;
+			h1 
+			{
+				font-size: 1.5em;
+				margin: 0 0 7px;
+				font-weight: 100;
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				color: $white; 
+				border-bottom: 1px dotted $grey;
+				display: table;
+			}
+			>h2 
+			{
+				font-family: arial;
+				font-size: 1.2em;
+				letter-spacing: 0.02em;
+				font-weight: 800;
+				color: white;
+				border-bottom: 1px dotted $darkGrey;
+				display: table;
+				a 
+				{
+					display: inline;
+					font-size: inherit;
+					color: $green;
+					&:hover 
+					{
+						color: $white;
+						background-color: $green;
+					}
+				}
+			}
+			h3 
+			{
+				font-size: 10px;
+				color: $white;
+				width: 300px;
+				text-align: left;
+				float: right;
+			}
+			p 
+			{
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				font-size: 1em;
+				line-height: 1.25em;
+				font-weight: 100;
+				color: white;
+				margin: 0 0 3px;
+				a 
+				{
+					display: inline;
+					font-size: inherit;
+					color: $green;
+					&:hover 
+					{
+						color: $white;
+						background-color: $green;
+					}
+				}
+			}
+			a 
+			{
+				margin: 10px 0 0 0;
+				display: block;
+				color: $whoColor;
+			}	
+			strong
+			{
+				font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+				font-weight: 100;
+			}
+			em
+			{
+				font-weight: 100;
+			}
+			table 
+			{
+				margin: 0 0 5px 0;
+				tr {
+					th 
+					{
+						margin: 0 40px 0 0;
+						font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+						font-weight: 100;
+						font-size: 1.8em;
+						color: white;
+					}
+					td 
+					{
+						font-size: 1.2em;
+						vertical-align: baseline;
+						
+						input.submit 
+						{
+							float: right;
+						}
+						input, textarea 
+						{
+							border: none;
+							border-radius: 3px;
+						}
+					}
+				}
+			}
+		}
+		div.block5
+		{
+			width: 50em;
+			clear: both;
+			float: none;
+		}
+	}
+	div.footer 
+	{
+		border-top: 15px solid $green;
+		background: transparent url("../img/50dark.png");
+		height: 150px;
+		float: left;
+		width: 100%;
+		
+		div.container
+		{
+			font-size: 1.4em;
+			padding: 20px 0 0 160px;
+			margin: 0 auto;
+			div.about, div.links, div.contact
+			{
+				width: 250px;
+				margin: 5px;
+				float: left;
+				display: inline;
+			}
+			
+			h1 {
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				color: $white;
+				font-size: 1.5em;
+				font-weight: 100;
+			}
+			div.links
+			{
+				ul
+				{
+					li
+					{
+						width: 120px ;
+						float: left;
+						margin: 0 0 5px;
+						font-size: 11px;
+					}
+				}
+			}
+			div.contact
+			{
+				margin: 0 50px 0 0;
+				float: right;
+			}
+			p
+			{
+				font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+				color: white;
+			}
+		}
+	}
+}
+
+	
+p.copyright {
+	color: #a1a1a1;
+	margin: 5px 0 0 0;
+	font-size: 1em;
+	letter-spacing: -0.015em;
+	}
+ 

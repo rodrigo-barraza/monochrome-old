@@ -1,0 +1,46 @@
+ul#clients{
+	width: 800px;
+	li{
+		display: block;
+		width: 250px;
+		height: 142px;
+		background-image: url('../img/clients.jpg');
+		float: left;
+		color: rgba(0, 0, 0, 0.0);
+		font-size: 1.6em;
+		font-weight: 100;
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		line-height: 132px;
+		font-style: italic;
+		text-align: center;
+		&:hover 
+		{ 
+			color: white;
+			box-shadow: inset 0px 0px 197px 90px black;
+		    animation: fadein 2s;
+		    -moz-animation: fadein 2s; /* Firefox */
+		    -webkit-animation: fadein 2s; /* Safari and Chrome */
+		    -o-animation: fadein 2s; /* Opera */
+		};
+	}
+
+	li:nth-child(0n+2){
+		background-position: -250px 0px;
+	}
+	li:nth-child(0n+3){
+		background-position: -500px 0px;
+	}
+	li:nth-child(0n+4){
+		background-position: 0px -143px;
+	}
+	li:nth-child(0n+5){
+		background-position: -250px -143px;
+	}
+	li:nth-child(0n+6){
+		background-position: -500px -143px;
+	}
+	li:nth-child(0n+7){
+		background-position: 0px -286px;
+	}
+
+}

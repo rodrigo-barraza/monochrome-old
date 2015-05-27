@@ -1,0 +1,5 @@
+.core-dropdown{height:100%}
+.core-dropdown>li{z-index:2}
+.core-dropdown>li ul{right:-999999px;list-style:none;position:absolute;padding:0;width:250px;border:0;overflow-x:hidden;overflow-y:auto}
+.core-dropdown>li ul li{width:inherit}
+.core-dropdown>li:hover ul{right:0}

@@ -1,0 +1,175 @@
+/* line 5, ../sass/gallery.scss */
+body.gallery div.head {
+  background: url("../img/headBackground.png");
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 25px 0 0 100px;
+}
+/* line 12, ../sass/gallery.scss */
+body.gallery div.head > a {
+  margin: 0 18px 0 0;
+  float: left;
+  height: 18px;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+/* line 18, ../sass/gallery.scss */
+body.gallery div.head a.photography {
+  width: 182px;
+  background-position: 0px -100px;
+}
+/* line 21, ../sass/gallery.scss */
+body.gallery div.head a.photography:hover {
+  background-position: 0px -20px;
+}
+/* line 25, ../sass/gallery.scss */
+body.gallery div.head a.design {
+  width: 87px;
+  background-position: 0px -120px;
+}
+/* line 28, ../sass/gallery.scss */
+body.gallery div.head a.design:hover {
+  background-position: 0px -40px;
+}
+/* line 32, ../sass/gallery.scss */
+body.gallery div.head a.illustration {
+  width: 156px;
+  background-position: 0px -140px;
+}
+/* line 35, ../sass/gallery.scss */
+body.gallery div.head a.illustration:hover {
+  background-position: 0px -60px;
+}
+/* line 39, ../sass/gallery.scss */
+body.gallery div.head a.monochrome {
+  width: 185px;
+  background-position: 0px -80px;
+}
+/* line 42, ../sass/gallery.scss */
+body.gallery div.head a.monochrome:hover {
+  background-position: 0px 0px;
+}
+/* line 47, ../sass/gallery.scss */
+body.gallery div.head a.photography.active {
+  background-position: 0px -20px;
+}
+/* line 50, ../sass/gallery.scss */
+body.gallery div.head a.design.active {
+  background-position: 0px -40px;
+}
+/* line 53, ../sass/gallery.scss */
+body.gallery div.head a.illustration.active {
+  background-position: 0px -60px;
+}
+/* line 58, ../sass/gallery.scss */
+body.gallery ul.nav {
+  color: #5a5a5a;
+  clear: both;
+}
+/* line 62, ../sass/gallery.scss */
+body.gallery ul.nav li {
+  margin: 3px 10px 0 0;
+  float: left;
+  font-size: 0.65em;
+}
+/* line 67, ../sass/gallery.scss */
+body.gallery ul.nav li a {
+  text-transform: uppercase;
+  font-style: italic;
+  color: gray;
+}
+/* line 72, ../sass/gallery.scss */
+body.gallery ul.nav li a:hover {
+  color: white;
+  text-shadow: #FFFFFF 0 0 8px;
+}
+/* line 82, ../sass/gallery.scss */
+body.gallery div.gallery {
+  height: 100%;
+}
+/* line 85, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery {
+  margin: 75px 0 0 15px;
+}
+/* line 88, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery .hoverRed, body.gallery div.gallery table.gallery .hoverYellow, body.gallery div.gallery table.gallery .hoverCyan {
+  background-color: black;
+}
+/* line 91, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery .hoveredRed {
+  background-color: #5a5a5a;
+}
+/* line 94, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery .hoveredYellow {
+  background-color: #f49814;
+}
+/* line 97, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery .hoveredCyan {
+  background-color: #00bbcc;
+}
+/* line 101, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th, body.gallery div.gallery table.gallery td {
+  padding: 0 80px;
+}
+/* line 105, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th {
+  height: 500px;
+  min-width: 300px;
+  text-align: left;
+}
+/* line 110, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th img {
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #262626;
+}
+/* line 119, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th h1, body.gallery div.gallery table.gallery th p {
+  width: 300px;
+}
+/* line 123, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th p {
+  color: lightGrey;
+  font-size: 0.75em;
+}
+/* line 128, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th h1 {
+  color: #d9d9d9;
+  font-size: 1.5em;
+}
+/* line 133, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th h2 {
+  color: #a7a7a7;
+  font-size: 1em;
+}
+/* line 138, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery th h3 {
+  color: black;
+  font-size: 1.2em;
+}
+/* line 144, ../sass/gallery.scss */
+body.gallery div.gallery table.gallery td {
+  color: #c5c5c5;
+  font-size: 0.65em;
+}
+/* line 151, ../sass/gallery.scss */
+body.gallery div.footer {
+  color: #5a5a5a;
+  font-size: 0.65em;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  width: 300px;
+  height: 15px;
+}
+/* line 161, ../sass/gallery.scss */
+body.gallery div.footer a {
+  color: white;
+}
+/* line 163, ../sass/gallery.scss */
+body.gallery div.footer a:hover {
+  text-shadow: #FFFFFF 0 0 8px;
+}

@@ -1,0 +1,719 @@
+body.gallery div.head {
+  background: url("../img/headBackground.png");
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 25px 0 0 100px;
+}
+body.gallery div.head > a {
+  margin: 0 18px 0 0;
+  float: left;
+  height: 18px;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+body.gallery div.head a.photography {
+  width: 182px;
+  background-position: 0px -100px;
+}
+body.gallery div.head a.photography:hover {
+  background-position: 0px -20px;
+}
+body.gallery div.head a.design {
+  width: 87px;
+  background-position: 0px -120px;
+}
+body.gallery div.head a.design:hover {
+  background-position: 0px -40px;
+}
+body.gallery div.head a.illustration {
+  width: 156px;
+  background-position: 0px -140px;
+}
+body.gallery div.head a.illustration:hover {
+  background-position: 0px -60px;
+}
+body.gallery div.head a.monochrome {
+  width: 185px;
+  background-position: 0px -80px;
+}
+body.gallery div.head a.monochrome:hover {
+  background-position: 0px 0px;
+}
+body.gallery div.head a.photography.active {
+  background-position: 0px -20px;
+}
+body.gallery div.head a.design.active {
+  background-position: 0px -40px;
+}
+body.gallery div.head a.illustration.active {
+  background-position: 0px -60px;
+}
+body.gallery ul.nav {
+  color: #5a5a5a;
+  clear: both;
+}
+body.gallery ul.nav li {
+  margin: 3px 10px 0 0;
+  float: left;
+  font-size: 0.65em;
+}
+body.gallery ul.nav li a {
+  text-transform: uppercase;
+  font-style: italic;
+  color: gray;
+}
+body.gallery ul.nav li a:hover {
+  color: white;
+  text-shadow: #FFFFFF 0 0 8px;
+}
+body.gallery div.gallery {
+  height: 100%;
+}
+body.gallery div.gallery table.gallery {
+  margin: 75px 0 0 15px;
+}
+body.gallery div.gallery table.gallery .hoverRed, body.gallery div.gallery table.gallery .hoverYellow, body.gallery div.gallery table.gallery .hoverCyan {
+  background-color: black;
+}
+body.gallery div.gallery table.gallery .hoveredRed {
+  background-color: #5a5a5a;
+}
+body.gallery div.gallery table.gallery .hoveredYellow {
+  background-color: #f49814;
+}
+body.gallery div.gallery table.gallery .hoveredCyan {
+  background-color: #00bbcc;
+}
+body.gallery div.gallery table.gallery th, body.gallery div.gallery table.gallery td {
+  padding: 0 80px;
+}
+body.gallery div.gallery table.gallery th {
+  height: 500px;
+  min-width: 300px;
+  text-align: left;
+}
+body.gallery div.gallery table.gallery th img {
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #262626;
+}
+body.gallery div.gallery table.gallery th h1, body.gallery div.gallery table.gallery th p {
+  width: 300px;
+}
+body.gallery div.gallery table.gallery th p {
+  color: lightGrey;
+  font-size: 0.75em;
+}
+body.gallery div.gallery table.gallery th h1 {
+  color: #d9d9d9;
+  font-size: 1.5em;
+}
+body.gallery div.gallery table.gallery th h2 {
+  color: #a7a7a7;
+  font-size: 1em;
+}
+body.gallery div.gallery table.gallery th h3 {
+  color: black;
+  font-size: 1.2em;
+}
+body.gallery div.gallery table.gallery td {
+  color: #c5c5c5;
+  font-size: 0.65em;
+}
+body.gallery div.footer {
+  color: #5a5a5a;
+  font-size: 0.65em;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  width: 300px;
+  height: 15px;
+}
+body.gallery div.footer a {
+  color: white;
+}
+body.gallery div.footer a:hover {
+  text-shadow: #FFFFFF 0 0 8px;
+}
+
+#wrapGallery {
+  margin: 0 0 0 220px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+#playScroller {
+  margin: 0 0 0 220px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#playScroller .derecha {
+  margin: 0 0 0 50%;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+#playScroller .derecha .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .derecha .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .derecha .topOn {
+  background-image: url("../img/derechaTop.png");
+}
+#playScroller .derecha .bottomOn {
+  background-image: url("../img/derechaBottom.png");
+}
+#playScroller .izquierda {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+}
+#playScroller .izquierda .top {
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+#playScroller .izquierda .bottom {
+  margin: 320px 0 0 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#playScroller .izquierda .topOn {
+  background-image: url("../img/izquierdaTop.png");
+}
+#playScroller .izquierda .bottomOn {
+  background-image: url("../img/izquierdaBottom.png");
+}
+#playScroller .centro {
+  position: absolute;
+  margin: 0 0 0 35%;
+  width: 15%;
+  height: 100%;
+}
+#playScroller .derechaOn {
+  background-image: url("../img/derechaOn.png");
+}
+#playScroller .izquierdaOn {
+  background-image: url("../img/izquierdaOn.png");
+}
+
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/black_fabric.png");
+  font-size: 62.5%;
+  background-color: #393939;
+  background-attachment: fixed;
+  font-family: "Helvetica Neue",Arial,Helvetica,;
+  color: #d2d2d2;
+}
+body a {
+  color: inherit;
+}
+body div.background_black {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../img/black_fabric.png");
+  position: fixed;
+  z-index: -5;
+}
+body div.background_white {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../img/white_fabric.png");
+  position: fixed;
+  z-index: -5;
+  display: none;
+}
+body div.header.black {
+  background-image: url("../img/header_black.png");
+}
+body div.header.white {
+  background-image: url("../img/header_white.png");
+}
+body div.header {
+  bottom-margin: 1px solid white;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+body div.header h1, body div.header h2 {
+  margin: 5px;
+  float: right;
+  font-weight: 100;
+}
+body div.header h1 {
+  color: #d2d2d2;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-indent: -3000px;
+  white-space: nowrap;
+  width: 183px;
+}
+body div.header h1 a {
+  background-image: url("../img/header_works.png");
+  height: 35px;
+  display: block;
+}
+body div.header h2 {
+  margin: -4px 5px 0 0;
+  clear: right;
+  font-size: 1em;
+  letter-spacing: 0.30em;
+  text-transform: lowercase;
+}
+body div.header h2 a {
+  font-weight: 100;
+  font-style: italic;
+  color: #5a5a5a;
+}
+body div.header h2 a:hover {
+  color: white;
+}
+body div.navigation {
+  text-align: right;
+  position: fixed;
+  left: 0;
+  padding: 40px 10px 0 0;
+  border-right: 1px dashed #343434;
+  z-index: 2;
+  height: 100%;
+}
+body div.navigation h1, body div.navigation h2, body div.navigation ul {
+  margin: 0 0 0 25px;
+}
+body div.navigation h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+body div.navigation h1 em {
+  color: white;
+  font-weight: 100;
+}
+body div.navigation h1 a {
+  color: #1f6764;
+  font-style: italic;
+}
+body div.navigation h1 a:hover {
+  color: white;
+}
+body div.navigation h2 {
+  font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 10px 0 0 0;
+  color: white;
+}
+body div.navigation h2 a:hover {
+  background-color: #1f6764;
+}
+body div.navigation ul li {
+  margin: 4px 0 0 0;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+body div.navigation ul li a {
+  color: #d2d2d2;
+}
+body div.navigation ul li a:hover {
+  color: #1f6764;
+}
+body div.navigation ul a.active {
+  background-color: #1f6764;
+  color: white !important;
+  padding: 0 0 0 6px;
+}
+
+a.toTop {
+  border-radius: 3px;
+  font-family: Arial;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #1f6764;
+  font-size: 1.1em;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+  display: none;
+  padding: 15px 20px;
+}
+a.toTop:hover {
+  background-color: #0e0e0e;
+  color: #d2d2d2;
+}
+a.toTop:active {
+  background-color: #d2d2d2;
+  color: #d2d2d2;
+}
+a.toTop em.row2 {
+  line-height: -2em;
+  display: block;
+  margin: -43px 0 0 0;
+}
+
+body.start {
+  text-align: center;
+  color: white;
+}
+body.start h1 {
+  background-image: url("../img/header.png");
+  font-style: italic;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 40px auto 20px auto;
+  text-indent: -3000px;
+  white-space: nowrap;
+  color: white;
+  width: 295px;
+  height: 65px;
+}
+body.start h1 a {
+  outline: none;
+  display: block;
+  height: 63px;
+}
+body.start > a {
+  margin: 0 10px;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+}
+body.start > a.index1 {
+  background-image: url("../img/index.jpg");
+}
+body.start > a.index1:hover {
+  background-position: 0px 250px;
+}
+body.start > a.index2 {
+  background-image: url("../img/index.jpg");
+  background-position: 500px 0px;
+}
+body.start > a.index2:hover {
+  background-position: 500px 250px;
+}
+body.start > a.index3 {
+  background-image: url("../img/index.jpg");
+  background-position: 250px 0px;
+}
+body.start > a.index3:hover {
+  background-position: 250px 250px;
+}
+body.start v
+h2 {
+  font-size: 2em;
+  font-weight: 100;
+  color: #00bbcc;
+  margin: -7px 0 15px 0;
+  letter-spacing: .052em;
+}
+body.start ul.links {
+  margin: 5px 0 0 0;
+  font-family: inherit;
+}
+body.start ul.links li {
+  display: inline;
+  margin: 0 3px;
+}
+body.start ul.links li a {
+  padding: 0 5px;
+  color: inherit;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+}
+body.start ul.links li a:hover {
+  background-color: #1f6764;
+}
+body.start ul.links li a.works {
+  color: #1f6764;
+}
+body.start ul.links li a.works:hover {
+  background-color: #1f6764;
+  color: white;
+}
+
+body div.content {
+  float: right;
+  margin: 40px 0 0 305px;
+  left: -50%;
+  position: relative;
+  text-align: left;
+  max-width: 1000px;
+}
+body div.content div.type {
+  left: 50%;
+  position: relative;
+  text-align: center;
+}
+body div.content div.type iframe {
+  margin: 0 0 15px 0;
+}
+body div.content div.type span.info {
+  display: block;
+  text-align: left;
+  padding: 0 0 20px 0;
+}
+body div.content div.type span.info em, body div.content div.type span.info h1, body div.content div.type span.info h2, body div.content div.type span.info p {
+  color: #d2d2d2;
+}
+body div.content div.type span.info a {
+  font-weight: 800;
+  color: #1f6764;
+}
+body div.content div.type span.info a:hover {
+  color: white;
+}
+body div.content div.type span.info em {
+  font-size: 1.1em;
+}
+body div.content div.type span.info h1 {
+  font-size: 2em;
+}
+body div.content div.type span.info h2 {
+  font-size: 1.2em;
+}
+body div.content div.type > a {
+  margin: 0 0 55px 0;
+  border: 1px solid #393939;
+  display: block;
+}
+body div.content div.type > a:hover {
+  border: 1px solid #d2d2d2;
+}
+body div.content div.type > a:active {
+  border: 1px solid #1f6764;
+}
+body div.content div.type > a > h1 {
+  color: white;
+  margin: 0 0 5px -20px;
+  font-size: 1em;
+  clear: both;
+  font-weight: 200;
+}
+body div.content span.box {
+  float: left;
+  min-height: 80px;
+  width: 120px;
+  padding: 20px;
+  margin: 0 auto;
+}
+body div.content span.box span {
+  display: block;
+  width: 120px;
+}
+body div.content span.box a {
+  display: block;
+  border: 1px solid #393939;
+  width: 120px;
+  height: 120px;
+}
+body div.content span.box a:hover {
+  border: 1px solid #d2d2d2;
+}
+body div.content span.box a:active {
+  border: 1px solid #1f6764;
+}
+body div.content span.box img {
+  text-align: center;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+body div.content span.box h1, body div.content span.box h2 {
+  text-align: left;
+  color: #d2d2d2;
+}
+body div.content span.box h1 {
+  display: inline;
+  font-size: 1.1em !important;
+  float: left;
+  font-weight: 200;
+  padding: 0 0 0 5px;
+}
+body div.content span.box h2 {
+  font-size: 1.2em !important;
+  clear: both;
+  font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+}
+body div.content span.box span.state {
+  margin: 0 2px 0 3px;
+  width: 10px;
+  height: 10px;
+  display: inline;
+  float: right;
+  background: transparent url("../img/sprites.png") 0px 0px no-repeat;
+}
+body > div.contact {
+  padding: 35px 0 0 165px;
+}
+body > div.contact div {
+  width: 25em;
+  float: left;
+  position: relative;
+  text-align: left;
+  color: #d2d2d2;
+  max-width: 800px;
+  padding: 5px;
+  margin: 0 0 5px 0;
+  font-size: 1.4em;
+}
+body > div.contact div h1 {
+  font-size: 1.5em;
+  margin: 0 0 7px;
+  font-weight: 100;
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  color: #d2d2d2;
+  border-bottom: 1px dotted gray;
+  display: table;
+}
+body > div.contact div > h2 {
+  font-family: arial;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: white;
+  border-bottom: 1px dotted #5a5a5a;
+  display: table;
+}
+body > div.contact div > h2 a {
+  display: inline;
+  font-size: inherit;
+  color: #1f6764;
+}
+body > div.contact div > h2 a:hover {
+  color: #d2d2d2;
+  background-color: #1f6764;
+}
+body > div.contact div h3 {
+  font-size: 10px;
+  color: #d2d2d2;
+  width: 300px;
+  text-align: left;
+  float: right;
+}
+body > div.contact div p {
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  font-size: 1em;
+  line-height: 1.25em;
+  font-weight: 100;
+  color: white;
+  margin: 0 0 3px;
+}
+body > div.contact div p a {
+  display: inline;
+  font-size: inherit;
+  color: #1f6764;
+}
+body > div.contact div p a:hover {
+  color: #d2d2d2;
+  background-color: #1f6764;
+}
+body > div.contact div a {
+  margin: 10px 0 0 0;
+  display: block;
+  color: #5a5a5a;
+}
+body > div.contact div strong {
+  font-family: Rockwell,"Rockwell",Georgia,Times,serif;
+  font-weight: 100;
+}
+body > div.contact div em {
+  font-weight: 100;
+}
+body > div.contact div table {
+  margin: 0 0 5px 0;
+}
+body > div.contact div table tr th {
+  margin: 0 40px 0 0;
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  font-weight: 100;
+  font-size: 1.8em;
+  color: white;
+}
+body > div.contact div table tr td {
+  font-size: 1.2em;
+  vertical-align: baseline;
+}
+body > div.contact div table tr td input.submit {
+  float: right;
+}
+body > div.contact div table tr td input, body > div.contact div table tr td textarea {
+  border: none;
+  border-radius: 3px;
+}
+body > div.contact div.block5 {
+  width: 50em;
+  clear: both;
+  float: none;
+}
+body div.footer {
+  border-top: 15px solid #1f6764;
+  background: transparent url("../img/50dark.png");
+  height: 150px;
+  float: left;
+  width: 100%;
+}
+body div.footer div.container {
+  font-size: 1.4em;
+  padding: 20px 0 0 160px;
+  margin: 0 auto;
+}
+body div.footer div.container div.about, body div.footer div.container div.links, body div.footer div.container div.contact {
+  width: 250px;
+  margin: 5px;
+  float: left;
+  display: inline;
+}
+body div.footer div.container h1 {
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  color: #d2d2d2;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+body div.footer div.container div.links ul li {
+  width: 120px;
+  float: left;
+  margin: 0 0 5px;
+  font-size: 11px;
+}
+body div.footer div.container div.contact {
+  margin: 0 50px 0 0;
+  float: right;
+}
+body div.footer div.container p {
+  font-family: Rockwell, "Rockwell", Georgia, Times, serif;
+  color: white;
+}
+
+p.copyright {
+  color: #a1a1a1;
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  letter-spacing: -0.015em;
+}

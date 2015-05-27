@@ -1,0 +1,250 @@
+@import "vars.scss";
+
+div#navigation{
+	border-bottom: 1px solid #1b1b1b;
+	height: 45px;
+	width: 100%;
+	text-align: right;
+	top: 0;
+	left: 0;
+	background-image: url('../img/fabric_black.png');
+	z-index: 2;
+	box-shadow: 20px 0px 35px -14px black;
+	margin: 0 auto 0;
+	position: fixed;
+
+	div.wrapper{
+	max-width: 996px;	
+	height: 100%; //100% of navigation
+	position: relative;
+	margin: 0 auto;
+	
+	> a:first-child
+	{
+		font-size: 1.7em;
+		color: black;
+		color: rgba(0,0,0,0);
+		background-image: url('../img/logo.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		height: 40px;
+		line-height: 47px;
+		text-indent: 51px;
+		margin: 0 0 0px 0;
+		display: block;
+		float: left;
+		position: relative;
+		bottom: -4px;
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		text-transform: lowercase;
+		
+		&:hover,&:active
+		{
+			color: $white!important;
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			color: rgba(0,0,0,0);
+		}
+		
+	}	
+}
+
+	ul 
+	{
+		display: block;
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		li 
+		{
+			float: left;
+			margin: 0 0 0 30px;
+			a
+			{
+				color: $white;
+				display: block;
+				padding: 2px 0;
+				&:hover	{color: white;}
+			}
+		}
+		.active
+		{
+			background-color: $white;
+			background-repeat: no-repeat;
+			background-position: left;
+			color: black !important;
+			box-shadow: inset -79px 1px 45px -15px white;
+		}
+		p
+		{
+			color: $darkerGrey;
+		}
+		
+		a 
+		{
+			text-transform: uppercase;
+			font-style: italic;
+			font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+			margin: 5px 0 0 0;
+			color: $green;
+			letter-spacing: 0.1em;
+			font-size: 1.4em;
+			font-weight: 100;
+			border-bottom: 2px solid transparent;
+			line-height: 30px;
+
+			&:hover {color:  white;
+			border-bottom: 2px solid white;}
+		}
+	}
+// Links : Navigation : Body
+	
+	h1
+	{
+		font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+		text-transform: uppercase;
+		text-align: right;
+		font-size: 2em;
+		font-weight: 100;
+		padding: 5px 0 0 0;
+		color: white;
+		a
+		{
+			color: $white;
+			padding: 2px;
+			margin: 0 -2px;
+			&:hover 
+			{
+				color: white;
+			}
+		}
+	}
+}		
+ 
+a.toTop 
+{
+	z-index: 99;
+	font-family: Arial;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	background-color: black;
+	font-size: 1.1em;
+	line-height: 1em;
+	text-align: center;
+	color: $white;
+	display: none;
+	padding: 5px 20px;
+	
+	&:hover {
+		background-color: $darkestGrey;
+		color: $white;
+	}
+	&:active {
+		background-color: $white;
+		color: $white;
+	}
+	
+	em.row2 {
+		line-height: -2em;
+		display: block;
+		margin: -43px 0 0 0;
+	}
+}	
+body.start 
+{
+	text-align: center;
+	color: white;
+	h1 
+	{
+		background-image: url('../img/header.png');
+		background-position: bottom;
+		background-repeat: no-repeat;
+		font-style: italic;
+		font-weight: 100;
+		text-transform: uppercase;
+		margin: 0px auto 20px auto;
+		text-indent: -3000px;
+		white-space: nowrap;                  //because only the above line is indented
+		color: white;
+		width: 295px;
+		height: 65px;
+		padding: 20px 0 0 0;
+		
+		a 
+		{
+			outline: none;
+			display: block;
+			height: 63px;
+		}
+	}
+	
+	h2 {
+		color: white;
+	}
+	
+	>a {
+		margin: 0 10px;
+		height: 250px;
+		width: 250px;
+		display: inline-block;
+	}
+	
+	>a.index1{
+		background-image: url('../img/index.jpg');	
+		&:hover {
+			background-position: 0px 250px;
+		}
+	}
+	>a.index2{
+		background-image: url('../img/index.jpg');	
+		background-position: 500px 0px;
+			&:hover {
+			background-position: 500px 250px;
+			}
+	}
+	>a.index3{
+		background-image: url('../img/index.jpg');	
+		background-position: 250px 0px;
+		&:hover {
+			background-position: 250px 250px;
+		}
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 100;
+		color: $designColor;
+		margin: -7px 0 15px 0;
+		letter-spacing: .052em;
+	}	
+	ul.links {
+		margin: 5px 0 0 0;
+		font-family: inherit;
+		li {
+			display: inline;
+			margin: 0 3px;
+			a{
+				padding: 0 5px;
+				color: inherit;
+				font-size: 2em;
+				font-weight: 200;
+				letter-spacing: -0.03em;
+				color: $white;
+				&:hover {
+					color: white;
+					background-color: $green;
+				}
+			}
+			a.works 
+			{
+				color: $green;
+				&:hover {
+					background-color: $green;
+					color: white;
+				}
+			}
+		}
+	}
+}

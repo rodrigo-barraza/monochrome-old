@@ -1,0 +1,575 @@
+@import "vars.scss";
+@import "footer.scss";
+@import "navigation.scss";
+@import "wrap.scss";
+@import "scroller.scss";
+
+html, body {
+}
+
+body {
+	font-size: 100.01%; // Compensates for several browser bugs //
+	background-color: white;
+	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	}
+	
+body.start {
+	text-align: center;
+	color: #262626;
+	
+	h1 {
+		margin: 15px 0 0 0;
+		font-size: 3.5em;
+		color: inherit;
+	}
+	
+	h2 {
+		font-size: 1em;
+		color: inherit;
+		margin: -7px 0 15px 0;
+		letter-spacing: .052em;
+	}
+}
+
+body.who {
+	background-color: black;
+	margin: 30px 0 0 60px;
+	
+	a.home {
+		position: absolute;
+		top: 30px;
+		left: 10px;
+		color: #c7c7c7;
+		font-size: 3.5em;
+		font-weight: 800;
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: url("../img/iconWho.png");
+		
+		&hover { color: black; }
+	}
+	
+	h1.title {
+		color: white;
+		font-size: 2.5em;
+		font-weight: 800; 
+	}
+	
+	ul.navigation {
+		text-transform: uppercase;
+		color: #c7c7c7;
+		margin: -5px 0 30px 0;
+		font-size: 0.75em;
+		clear: right;
+		
+		li{
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	}
+	
+	ul.connect {
+	
+		width: 150px;
+		display: block;
+		float: left;
+		clear: left;
+		
+		>li{
+			margin: 0 0 10px 0;
+			padding: 5px;
+		}
+		
+		li {
+			font-size: 0.80em;
+			color: #c7c7c7;
+			
+			h1 {
+				color: white;
+				font-size: 0.85em;
+				margin: 0 0 0px 0;
+			}
+			
+			a {
+				color: #c7c7c7;
+			}
+			
+			a:hover {
+				color: black;
+				background-color: yellow;
+				font-weight: 800;
+			}
+		}
+	
+	}
+	
+	div.content {
+		float: left;
+		margin: 0 0 0 30px;
+	
+		#box {
+			color: white;
+			background-repeat: repeat-x;
+			background-position: bottom;
+			width: 600px;
+			font-family: arial,verdana,sans-serif;
+			padding: 5px;
+			margin: 0 0 20px 0;
+		}	
+		.lightStyle	{
+			h1 {
+				color: white;
+				font-size: 28px;
+				margin: 0 0 0px 0;
+				font-weight: 800;
+			}
+			h2, h3, p {
+				margin: 0 0 0 20px;
+			}
+			h2 {
+				color: white; 
+				font-size: .85em;
+				line-height: 1.25em;
+			}
+			h3 {
+				font-size: 10px;
+				color: white;
+				font-style: italic;
+			}
+			p {
+				font-size: .70em;
+				line-height: 1em;
+				
+				span.green {
+				color: white;
+				 background-color: $photographyColor;
+				}
+				span.yellow {
+				color: white;
+				 background-color: $illustrationColor;
+				}
+				span.red {
+				color: white;
+				 background-color: $webColor;
+				}
+				span.cyan {
+				color: white;
+				 background-color: $designColor;
+				}
+				span.link {
+				color: #ff7200;
+				}
+				span.bold {
+				font-weight: 800;
+				}
+			}
+			a {
+				margin: 10px 0 0 0;
+				display: block;
+				color: $webColor;
+				font-size: 10px;
+			}	
+				
+			h1.red {
+				color: $webColor;
+			}
+			h1.yellow {
+				color: $illustrationColor;
+			}
+			h1.green {
+				color: $photographyColor;
+			}
+			h1.cyan {
+				color: $designColor;
+			}
+			
+			img#polaroid {
+				float: right;
+			}
+			
+		}
+	}
+}
+
+body.section {
+	margin: 30px 0 0 60px;
+	
+	a.home {
+		position: absolute;
+		top: 30px;
+		left: 10px;
+		color: #c7c7c7;
+		font-size: 3.5em;
+		font-weight: 800;
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: url("../img/home.png");
+		
+		&hover { color: black; }
+	}
+	
+	h1.title {
+		color: #313131;
+		font-size: 2.5em;
+		font-weight: 800; 
+	}
+	
+	ul.navigation {
+		text-transform: uppercase;
+		color: #c7c7c7;
+		margin: -5px 0 30px 0;
+		font-size: 0.75em;
+		clear: right;
+		li{
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	}
+	
+	div.states {
+		text-transform: uppercase;
+		font-weight: 800;
+		width: 1000px;
+		height: 20px;
+		margin: 0 0 40px 0;
+		
+		p {
+			margin: 0 50px 0 0;
+			display: inline;
+			height: 100%;
+			font-size: 0.75em;
+		}
+		
+		span {
+			height: 20px;
+			width: 20px;
+			margin: 0 10px 0 0;
+			display: inline-block;
+		}
+		
+		span.new {
+			background: url("../img/statesBig.png") 0 0 no-repeat;
+		}
+		span.updated {
+			background: url("../img/statesBig.png") -20px 0 no-repeat;
+		}
+		span.ongoing {
+			background: url("../img/statesBig.png") -40px 0 no-repeat;
+		}
+	}
+	
+	div.content {
+			width: 900px;
+			
+			div.medium {
+			}
+			div.small {
+			}
+			div.alternative {
+			}
+			
+			div.type {
+			}
+			
+			h1 {
+				margin: 0 0 10px 0px;
+				font-size: .75em;
+				text-transform: uppercase;
+				clear: both;
+			}
+			
+			span.thin {
+				max-width: 160px;
+			}
+			span.wide {
+				max-width: 240px;
+			}
+			
+			span.box {
+			display: block;
+			float: left;
+			min-height: 200px;
+			margin: 0 60px 35px 0;
+			
+			
+			img {
+				text-align: center;
+				background-color: red;
+				margin: 0 0 20px 0;
+				display: block;
+			}
+			h1 {
+				display: inline;
+				font-size: 0.70em;
+				font-style:italic;
+				text-transform: uppercase;
+				font-weight: 100;
+				float: left;
+			}
+			span.state {
+				margin: 0 0 0 5px;
+				width: 10px;
+				height: 10px;
+				display: inline;
+				float: right;
+			}
+			span.new {
+				background: url("../photography/img/states.png") 0 0 no-repeat;
+			}
+			span.updated{
+				background: url("../photography/img/states.png") -10px 0 no-repeat;
+			}
+			span.ongoing{
+				background: url("../photography/img/states.png") -20px 0 no-repeat;
+			}
+			}
+	}
+}
+
+body.gallery {
+	
+	a {
+		top: 10px;
+		display: block;
+		position: fixed;
+		
+		width: 50px;
+		height: 50px;
+		background-color: red;
+	}
+	a.home {
+		left: 20px;
+		background: url("../img/iconMonochrome.png");
+	}
+	a.up {
+		left: 80px;
+		background: url("../img/home.png");
+	}
+	
+	div.gallery {
+		height: 100%;
+		
+		table.gallery {
+			margin: 80px 0 0 15px;
+			
+			.hoverRed, .hoverYellow, .hoverCyan {
+				background-color: black;
+			}		
+			.hoveredRed {
+				background-color: $webColor;
+			}
+			.hoveredYellow {
+				background-color: $illustrationColor;
+			}
+			.hoveredCyan {
+				background-color: $designColor;
+			}
+			
+			th {
+				height: 500px;
+				min-width: 300px;
+				border-style:solid;
+				border-width:5px;
+				border-color: white;
+				text-align: center;
+				
+				
+				
+				h1, p {
+				width: 300px;
+				}
+				
+				p {
+				font-size: 0.75em;
+				}
+				
+				h1 {
+				color: black;
+				font-size: 2.5em;
+				}
+				
+				h2 {
+				color: black;
+				font-size: 1em;
+				}
+				
+				h3 {
+				color: black;
+				font-size: 1.2em;
+				}
+			}
+			
+			td {
+				background-color: white;
+				font-size: 0.75em;
+			}
+		}
+	}
+}
+
+	
+ul.links {
+	margin: 15px 0 0 0;
+	font-family: inherit;
+	
+		li {
+			display: inline;
+			margin: 0 3px;
+			
+			a{
+				font-size: 1.25em;
+				font-weight: 800;
+				letter-spacing: -0.03em;
+				}
+				
+			a.photography {
+				&:hover {
+					color: $photographyColor;
+				}
+			}
+			
+			a.design {
+				&:hover {
+					color: $designColor;
+				}
+			}
+			
+			a.illustration {
+				&:hover {
+					color: $illustrationColor;
+				}
+			}
+			
+			a.who {
+				&:hover {
+					background-color: yellow;
+				}
+			}
+			
+			a.connect {
+				&:hover {
+					background-color: yellow;
+				}
+			}
+			
+			}
+		li.divide {
+			vertical-align: 4px;
+			font-size: .5em;
+		}
+		
+	}
+	
+p.copyright {
+	color: #a1a1a1;
+	margin: 15px 0 0 0;
+	font-size: 0.6em;
+	letter-spacing: -0.015em;
+	}
+ 
+
+div#bottom{	
+	float: left;
+	height: 101px;
+	width: 100%;
+	background: {
+		image: url('../img/sectionWorksBackground.png'); 
+		repeat: no-repeat;
+		position: left top; }}
+	
+	
+div.description {
+	width: inherit;
+	padding: 5px;
+	margin: 5px 0 0 0;
+	background-color: white;
+	
+	span.icon {
+	float: right;
+	}	
+	span.film {
+	float: right;
+	}}
+	
+
+
+
+
+
+		
+#stretch {
+	clear: both;
+	height: 25px;
+	margin: 0 0 0 15px;
+	top: 550px;
+		span {
+		height: 25px;
+		display: block;
+		float: left;
+		}
+	}
+	
+#start {
+	background-image: url('../img/stretchStart35film.png');
+	width: 16px;
+	}
+	
+#mid {
+	background-image: url('../img/stretchMid35film.png');
+	background-repeat: repeat-x;
+	width: auto;
+	}
+	
+#end {
+	background-image: url('../img/stretchEnd35film.png');
+	width:  20px;
+	
+	}
+
+
+
+
+
+
+div#abc {
+	margin:50px 0 0 15px;
+	
+	div {
+	margin: 5px 0 0 0;
+	width: 570px;
+	height: 100px;
+	background-color: $backgroundColor;
+	
+	h1 {
+	font-size: 72px;
+	}
+	h2 {
+	font-size: 11px;
+	margin: 0 0 0 10px;
+	color: black;
+	}
+	}
+	
+	div.photography {
+	h1 {
+	/* color: $photographyColor; */
+	}
+	}
+	div.illustration {
+	h1 {
+	/* color: $illustrationColor;*/
+	}
+	}
+	div.web {
+	h1 {
+	/* color: $webColor;*/
+	}
+	}
+	div.design {
+	h1 {
+	/* color: $designColor;*/
+	}
+	}
+}

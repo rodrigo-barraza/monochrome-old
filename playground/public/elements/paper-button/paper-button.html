@@ -1,0 +1,37 @@
+
+<link rel="import" href="../../components/polymer/polymer.html"/>
+<polymer-element name="paper-button" role="button">
+  <template>
+    <style>:host {
+  border-radius: 2px;
+  background: rgba(0,0,0,0.2);
+  padding: 0.7em 0.57em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+-moz-user-select: none,
+-ms-user-select: none,
+:host(:hover) {
+  opacity: 0.8;
+}
+
+    </style>
+    <content>{{label}}</content>
+  </template>
+  <script>(function() {
+  Polymer({
+  publish: {
+    label: 'Testing',
+    raised: false
+  }
+})
+;
+
+
+}).call(this);
+
+  </script>
+</polymer-element>

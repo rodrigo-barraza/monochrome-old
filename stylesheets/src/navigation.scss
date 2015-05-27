@@ -1,0 +1,20 @@
+@import "vars.scss";
+
+div#navigation {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	height: $navHeight;
+	background-color: red;
+	text-align: right;
+
+	h1 {
+		font-size: 1em;
+		weight: 800;
+	}
+	
+	a {
+		font-size: 1em;
+		display: block;
+	}
+}
